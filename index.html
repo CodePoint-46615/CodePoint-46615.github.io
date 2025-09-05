@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SAIKOT - Portfolio</title>
+
+    <!-- TailwindCSS CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Roboto&display=swap"
+        rel="stylesheet">
+
+    <!-- Optional custom CSS -->
+    <link rel="stylesheet" href="styles/main.css">
+
+    <!-- font-awesome cdn  -->
+    <script src="https://kit.fontawesome.com/bb5ec023dc.js" crossorigin="anonymous"></script>
+</head>
+
+<body class="bg-gray-100 font-roboto min-h-screen ">
+
+    <!-- Navbar -->
+    <header
+        class="sm:sticky sm:top-0 sm:z-50 bg-gradient-to-r from-blue-200 via-blue-400 to-cyan-500 text-gray-100 py-5 w-full shadow-md">
+        <nav class="container mx-auto flex justify-between items-center">
+            <a href="#home" class="text-2xl font-bold">Saikot Kundu</a>
+            <ul class="hidden md:flex space-x-6" id="nav-links">
+                <li><a href="#about" class="hover:text-teal-300">About Me</a></li>
+                <li><a href="#skills" class="hover:text-teal-300">Skills</a></li>
+                <li><a href="#projects" class="hover:text-teal-300">Projects</a></li>
+                <li><a href="#education" class="hover:text-teal-300">Education</a></li>
+                <li><a href="#contact" class="hover:text-teal-300">Contact</a></li>
+            </ul>
+            <!-- Hamburger Menu -->
+            <div class="md:hidden">
+                <button id="hamburger-menu" class="text-white text-2xl">☰</button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- hero section -->
+    <section
+        class="h-screen flex flex-col md:flex-row items-center justify-center gap-10 md:gap-30 bg-gradient-to-r from-blue-900 via-blue-700 to-cyan-400 text-white">
+
+        <!-- hero bg-image -->
+        <img src="./images/hero-bg.png" alt="" class="border rounded-full p-1 bg-white w-[280px] h-[300px]">
+
+        <!-- hero section text -->
+        <div class="text-center">
+            <h1 class="text-3xl md:text-5xl font-bold font-montserrat text-gray-200">
+                Hello, I'm Saikot Kundu
+            </h1>
+            <p id="animated-text"
+                class="mt-4 text-lg md:text-2xl font-roboto text-teal-100 transition-opacity duration-700"></p>
+
+            <a id="btn-git" href="https://github.com/CodePoint-46615" target="_blank"
+                class="mt-6 inline-flex items-center px-6 py-5 bg-white text-blue-900 font-semibold rounded-lg shadow-lg transition transform cursor-pointer hover:bg-slate-200 active:scale-95">
+                <span class="font-bold">View My Work</span>
+                <i class="fa-brands fa-github ml-2"></i>
+            </a>
+
+            <!-- hero section social media  -->
+            <div class="mt-6 flex flex-row gap-3 justify-center ">
+                <a href="https://www.facebook.com/officialsaikot/" target="_blank">
+                    <i class="fa-brands fa-facebook text-gray-200 hover:text-gray-600 text-2xl"></i>
+
+                </a>
+
+                <a href="https://www.linkedin.com/in/saikotkundu/" target="_blank">
+                    <i class="fa-brands fa-linkedin text-gray-200 hover:text-gray-600 text-2xl"></i>
+                </a>
+
+                <a href="https://www.reddit.com/user/Opening_Task5490/" target="_blank">
+                    <i class="fa-brands fa-reddit text-gray-200 hover:text-gray-600 text-2xl"></i>
+                </a>
+            </div>
+
+        </div>
+
+    </section>
+
+    <main class="pt-20 max-w-[1250px] mx-auto p-6 space-y-20">
+
+        <!-- About Me -->
+        <section id="about"
+            class="transform opacity-0 translate-y-10 transition-all duration-700 flex flex-col md:flex-row items-center justify-center gap-20">
+            <div>
+                <h2 class="text-3xl font-bold text-blue-800 mb-4 text-center">About Me</h2>
+                <p class="text-lg w-full md:w-[800px] text-justify p-5 shadow-md shadow-blue-300 rounded-xl">Hi, I'm
+                    Saikot Kundu — a passionate and curious final-year Computer Science student at American
+                    International University - Bangladesh. I specialize in Software Development, with a growing
+                    expertise in Artificial Intelligence, Machine Learning, and Deep Learning. My journey in tech began
+                    with foundational programming languages like C++, Java, Python, and PHP, and evolved as I explored
+                    web technologies such as HTML, CSS, and JavaScript. As a fresher stepping into the professional
+                    world, I aspire to become an AI-enhanced software Developer, blending cutting-edge AI with robust
+                    software engineering principles. I’m deeply driven by a problem-solving mindset — I enjoy analyzing
+                    real-world challenges and crafting smart, efficient digital solutions that make a meaningful impact.
+                    My long-term vision lies in Research and Development-based software solutions, where innovation
+                    meets practicality. I believe in continuous learning, clean code, and building systems that not only
+                    work efficiently but also think intelligently.
+                </p>
+            </div>
+        </section>
+
+        <!-- Skills -->
+        <section id="skills" class="transform opacity-0 translate-y-10 transition-all duration-700">
+            <h2 class="text-3xl font-bold text-blue-800 mb-4">Skills</h2>
+
+            <div class="space-y-4">
+
+                <!-- Programming Languages -->
+                <div class="skill-group rounded-lg shadow-md bg-white">
+                    <!-- Button -->
+                    <button
+                        class="w-full flex justify-between items-center p-4 font-semibold text-left text-gray-800 toggle-btn hover:cursor-pointer">
+                        <span class="toogle-txt"> Programming Languages</span>
+                        <span class="arrow transition-transform bg-red-100 p-2 rounded-full">▼</span>
+                    </button>
+
+                    <!-- Wrapper for skills -->
+                    <div class="p-4 md:p-16 ">
+                        <!-- Main skill list -->
+                        <ul class="skill-list grid grid-cols-1 md:grid-cols-4 gap-5 items-center">
+                            <li
+                                class=" shadow-lg p-3 rounded-lg hover:scale-105 transition-transform w-full md:w-[250px] h-full">
+                                <img src="./images/c++.svg" alt="c++" class="mx-auto w-[50px] h-[50px]">
+                                <h1 class="text-center font-medium">C++</h1>
+                                <p class="text-center">variable, datatypes, loops, statemnt, pointer</p>
+                            </li>
+
+                            <li
+                                class="shadow-lg p-3 rounded-lg hover:scale-105 transition-transform w-full md:w-[250px] h-full">
+                                <img src="./images/java.svg" alt="java" class="mx-auto w-[50px] h-[50px]">
+                                <h1 class="text-center font-normal">Java</h1>
+                                <p class="text-center">variable, datatypes, loops, statemnt, pointer</p>
+                            </li>
+
+                            <li
+                                class="shadow-lg p-3 rounded-lg hover:scale-105 transition-transform w-full md:w-[250px] h-full">
+                                <img src="./images/C_sharp.svg" alt="c-sharp" class="w-[50px] h-[50px] mx-auto">
+                                <h1 class="text-center font-normal">C#</h1>
+                                <p class="text-center">variable, datatypes, loops, statemnt, pointer</p>
+                            </li>
+
+                            <li
+                                class="shadow-lg p-3 rounded-lg hover:scale-105 transition-transform w-full md:w-[250px] h-full">
+                                <img src="./images/python.svg" alt="python" class="mx-auto w-[50px] h-[50px]">
+                                <h1 class="text-center font-normal">Python</h1>
+                                <p class="text-center">variable, datatypes, loops, statemnt, pointer</p>
+                            </li>
+
+                            <li
+                                class="shadow-lg p-3 rounded-lg hover:scale-105 transition-transform w-full md:w-[250px] h-full">
+                                <img src="./images/javascript.svg" alt="javascript" class="mx-auto w-[50px] h-[50px]">
+                                <h1 class="text-center font-normal">JavaScript</h1>
+                                <p class="text-center">variable, datatypes, loops, statemnt, pointer</p>
+                            </li>
+
+                            <li
+                                class="shadow-lg p-3 rounded-lg hover:scale-105 transition-transform w-full md:w-[250px] h-full">
+                                <img src="./images/php.svg" alt="php" class="mx-auto w-[50px] h-[50px]">
+                                <h1 class="text-center font-normal">PHP</h1>
+                                <p class="text-center">variable, datatypes, loops, statemnt, pointer</p>
+                            </li>
+                        </ul>
+
+                        <!-- Preference list -->
+                        <div class="mt-15">
+                            <h1 class="font-semibold text-left text-gray-800 mt-5 mb-5">Comfortable at</h1>
+                            <ul class="preference-list flex flex-col md:flex-row gap-5 items-center">
+                                <li
+                                    class="shadow-lg p-3 rounded-lg hover:scale-105 transition-transform w-full md:w-[250px] h-full">
+                                    <img src="./images/javascript.svg" alt="javascript"
+                                        class="mx-auto w-[50px] h-[50px]">
+                                    <h1 class="text-center font-normal">JavaScript</h1>
+                                </li>
+
+                                <li
+                                    class="shadow-lg p-3 rounded-lg hover:scale-105 transition-transform w-full md:w-[250px] h-full">
+                                    <img src="./images/java.svg" alt="java" class="mx-auto w-[50px] h-[50px]">
+                                    <h1 class="text-center font-normal">Java</h1>
+                                </li>
+
+                                <!-- <li
+                                    class="shadow-lg p-3 rounded-lg hover:scale-105 transition-transform w-full md:w-[250px] h-full">
+                                    <img src="./images/python.svg" alt="python" class="mx-auto w-[50px] h-[50px]">
+                                    <h1 class="text-center font-normal">Python</h1>
+                                </li> -->
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Projects -->
+        <section id="projects" class="transform opacity-0 translate-y-10 transition-all duration-700">
+            <h2 class="text-3xl font-bold text-blue-800 mb-4">Projects</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- project-1 -->
+                <div class="bg-white p-6 rounded-lg shadow-md hover:translate-y-[-5px] hover:shadow-xl transition-all">
+                    <h3 class="font-semibold text-xl text-blue-800 mb-2">
+                        JAVA - Student Management System
+                    </h3>
+
+                    <!-- Image slider -->
+                    <div class="relative overflow-hidden rounded-lg slider" data-slider>
+                        <div class="flex transition-transform duration-500" data-slides>
+                            <img src="./images/java-project.jpg" alt="Slide 1" class="w-full flex-shrink-0">
+                            <img src="./images/java-project-2.jpg" alt="Slide 2" class="w-full flex-shrink-0">
+                            <img src="./images/java-project-3.jpg" alt="Slide 3" class="w-full flex-shrink-0">
+                        </div>
+
+                        <!-- controls -->
+                        <button
+                            class="absolute top-1/2 left-2 transform -translate-y-1/2 bg-gray-800 text-white px-2 py-1 rounded hover:cursor-pointer"
+                            data-prev>‹</button>
+                        <button
+                            class="absolute top-1/2 right-2 transform -translate-y-1/2 bg-gray-800 text-white px-2 py-1 rounded hover:cursor-pointer"
+                            data-next>›</button>
+                    </div>
+
+                    <!-- Description with See More -->
+                    <p class="text-sm text-gray-700 mb-2 text-justify mt-3 line-clamp-3" data-desc>
+                        This was my very first Java project—a desktop-based Student Management System built using Java
+                        Swing.
+                        The application includes features such as adding new students, an admin panel for managing
+                        records,
+                        and a basic graphical user interface. While there are some areas for improvement, this project
+                        helped
+                        me gain hands-on experience with Java GUI components, object-oriented programming, and
+                        event-driven design.
+                    </p>
+                    <button class="text-teal-500 hover:underline hover:cursor-pointer text-sm" data-toggle>See
+                        more</button>
+
+                    <a href="#" class="block mt-3 text-teal-300 hover:underline hover:cursor-pointer">View Project</a>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Education -->
+        <section id="education" class="py-16 bg-gray-50">
+            <h2 class="text-3xl font-bold text-blue-800 mb-12 text-center">Education</h2>
+
+            <div class="relative container mx-auto px-4">
+                <!-- vertical timeline line -->
+                <div
+                    class="absolute md:left-1/2 left-6 transform md:-translate-x-1/2 h-full border-l-4 bg-gradient-to-b from-blue-400 to-blue-600">
+                </div>
+
+                <!-- BSC -->
+                <div class="mb-12 flex flex-col md:flex-row justify-start items-center w-full group relative">
+                    <!-- Timeline Circle with Year -->
+                    <div class="absolute left-6 md:left-1/2 transform -translate-x-1/2 md:-translate-x-0 top-6 z-10">
+                        <span
+                            class="flex items-center justify-center w-14 h-14 bg-gradient-to-r from-blue-400 to-blue-600 text-white font-bold rounded-full border-4 border-white shadow-md">
+                            2026
+                        </span>
+                    </div>
+
+                    <!-- Card -->
+                    <div
+                        class="w-full md:w-1/2 md:pr-20 pr-20 relative order-2 md:order-1 transition-all duration-500 transform group-hover:scale-105 group-hover:shadow-2xl group-hover:bg-blue-50 rounded-xl mt-20 md:mt-0">
+                        <div class="bg-white rounded-xl shadow-md p-6 transition-all duration-500">
+                            <h3 class="text-xl font-semibold text-blue-700">
+                                Higher Secondary Certificate (HSC)
+                            </h3>
+                            <p class="text-gray-600 mt-2">Naogaon Govt College</p>
+                            <p class="text-gray-700 mt-3 text-justify">2018-2020</p>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- HSC -->
+                <div class="mb-12 flex flex-col md:flex-row justify-end items-center w-full group relative">
+                    <!-- Timeline Circle with Year -->
+                    <div class="absolute top-6 left-6 md:right-1/9 transform md:translate-x-1/2 z-10">
+                        <span
+                            class="flex items-center justify-center w-14 h-14 bg-gradient-to-r from-blue-400 to-blue-600 text-white font-bold rounded-full border-4 border-white shadow-md">
+                            2022
+                        </span>
+                    </div>
+
+
+                    <!-- Card -->
+                    <div
+                        class="w-full md:w-1/2 md:pl-20 pl-20 relative transition-all duration-500 transform group-hover:scale-105 group-hover:shadow-2xl group-hover:bg-blue-50 rounded-xl">
+                        <div class="bg-white rounded-xl shadow-md p-6 transition-all duration-500">
+                            <h3 class="text-xl font-semibold text-blue-700">
+                                Higher Secondary Certificate (HSC)
+                            </h3>
+                            <p class="text-gray-600 mt-2">Naogaon KD Govt. High School, Naogaon</p>
+                            <p class="text-gray-700 mt-3 text-justify">2010-</p>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- SSC -->
+                <div class="mb-12 flex flex-col md:flex-row justify-start items-center w-full group relative">
+                    <!-- Timeline Circle with Year -->
+                    <div class="absolute left-6 md:left-1/2 transform -translate-x-1/2 md:-translate-x-0 top-6 z-10">
+                        <span
+                            class="flex items-center justify-center w-14 h-14 bg-gradient-to-r from-blue-400 to-blue-600 text-white font-bold rounded-full border-4 border-white shadow-md">
+                            2020
+                        </span>
+                    </div>
+
+                    <!-- Card -->
+                    <div
+                        class="w-full md:w-1/2 md:pr-20 pr-20 relative order-2 md:order-1 transition-all duration-500 transform group-hover:scale-105 group-hover:shadow-2xl group-hover:bg-blue-50 rounded-xl mt-20 md:mt-0">
+                        <div class="bg-white rounded-xl shadow-md p-6 transition-all duration-500">
+                            <h3 class="text-xl font-semibold text-blue-700">
+                                Secondary School Certificate (SSC)
+                            </h3>
+                            <p class="text-gray-600 mt-2">Naogaon KD Govt High School, Naogaon</p>
+                            <p class="text-gray-700 mt-3 text-justify">2018-2020</p>
+                            <p class="text-gray-700 mt-3 text-justify">GPA: 5.00 out of 5.00</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+
+
+
+
+        <!-- Contact -->
+        <section id="contact" class="transform opacity-0 translate-y-10 transition-all duration-700">
+            <h2 class="text-3xl font-bold text-blue-800 mb-4">Contact</h2>
+            <form class="space-y-4">
+                <input type="text" placeholder="Full Name" class="w-full p-3 rounded-lg border border-gray-300">
+                <input type="email" placeholder="Email" class="w-full p-3 rounded-lg border border-gray-300">
+                <textarea placeholder="Message" class="w-full p-3 rounded-lg border border-gray-300"></textarea>
+                <button type="submit"
+                    class="w-full bg-blue-800 text-white py-3 rounded-lg hover:bg-teal-300 transition-colors">Send
+                    Message</button>
+            </form>
+        </section>
+
+    </main>
+
+    <footer class="bg-gradient-to-r from-blue-900 via-blue-700 to-cyan-400 text-gray-100 py-4 mt-20 font-semibold">
+        <p class="text-center">&copy; Created By <a href="https://github.com/CodePoint-46615"
+                class="text-gray-400 hover:text-black">CodePoint-46615</a> | 2025 All rights reserved.</p>
+    </footer>
+
+    <!-- JS -->
+    <script src="./js/main.js"></script>
+    <script src="./js/nav.js"></script>
+    <script src="./js/hero.js"></script>
+    <script src="./js/skill.js"></script>
+    <script src="./js/project.js"></script>
+</body>
+
+</html>

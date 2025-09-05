@@ -1,0 +1,64 @@
+:root {
+  /* fallback; will be overwritten by JS at runtime */
+  --header-height: 64px;
+}
+
+/* smooth behaviour when using history or manual scrollIntoView */
+html {
+  scroll-behavior: smooth;
+}
+
+/* make fragment navigation land visually below the header */
+main section, section {
+  /* CSS property that offsets automatic fragment jumps */
+  scroll-margin-top: var(--header-height);
+}
+
+/* optional: initial hidden state + visible state for intersection animation */
+main section {
+  opacity: 0;
+  transform: translateY(12px);
+  transition: opacity 600ms ease, transform 600ms ease;
+}
+main section.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* smooth height transition for the collapsible content */
+.skill-content {
+  height: 0;                /* closed by default */
+  transition: height 300ms ease;
+  will-change: height;
+}
+
+/* arrow rotation smooth */
+.arrow {
+  transition: transform 300ms ease;
+  display: inline-block;    /* needed for transform */
+}
+
+/* small text position transition (optional) */
+.toogle-txt {
+  transition: margin 300ms ease;
+}
+
+/* when open, rotate arrow and adjust text margin */
+.skill-group.open .arrow {
+  transform: rotate(180deg);
+}
+.skill-group.open .toogle-txt {
+  margin-left: 0.75rem; /* change as you like */
+  margin-top: 0.2rem;
+}
+
+/* optional visual for open group */
+.skill-group.open {
+  background-color: #fef3c7; /* light highlight */
+}
+
+.line-clamp-3 {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
