@@ -8,6 +8,16 @@ html {
   scroll-behavior: smooth;
 }
 
+/* prevent horizontal overflow from off-canvas drawer and small transforms */
+html, body {
+  overflow-x: hidden;
+}
+
+/* push page content below the fixed header */
+body {
+  padding-top: var(--header-height);
+}
+
 /* make fragment navigation land visually below the header */
 main section, section {
   /* CSS property that offsets automatic fragment jumps */

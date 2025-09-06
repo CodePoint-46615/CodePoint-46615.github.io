@@ -1,19 +1,31 @@
 // Hamburger Menu
 const hamburger = document.getElementById('hamburger-menu');
-const navLinks = document.getElementById('nav-links');
+const mobileMenu = document.getElementById('mobile-menu');
+const closeMenu = document.getElementById('close-menu');
+const menuLinks = mobileMenu.querySelectorAll('a');
 
+// Open drawer
 hamburger.addEventListener('click', () => {
-    navLinks.classList.toggle('hidden');
+  mobileMenu.classList.remove('translate-x-full', 'pointer-events-none');
+  mobileMenu.classList.add('translate-x-0', 'pointer-events-auto');
 });
 
-// Smooth scroll for navigation links
-document.querySelectorAll('nav a').forEach((link) => {
-    link.addEventListener('click', (e) => {
-        e.preventDefault();
-        const target = document.querySelector(link.getAttribute('href'));
-        target.scrollIntoView({ behavior: 'smooth' });
-    });
+// Close drawer
+function closeMobileMenu() {
+  mobileMenu.classList.remove('translate-x-0', 'pointer-events-auto');
+  mobileMenu.classList.add('translate-x-full', 'pointer-events-none');
+}
+
+closeMenu.addEventListener('click', closeMobileMenu);
+
+// Close on nav link click (no redirect)
+menuLinks.forEach(link => {
+  link.addEventListener('click', (e) => {
+    e.preventDefault();
+    closeMobileMenu();
+  });
 });
+
 
 // Optional: Mouse move parallax effect for header (small translation)
 document.addEventListener('mousemove', (e) => {
