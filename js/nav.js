@@ -54,13 +54,22 @@ function enableAnchorOffsetScrolling() {
 
     link.addEventListener('click', (e) => {
       const targetId = href;
+
+      // Special case: brand/home link should go to absolute top of the page
+      if (targetId === '#home' || targetId === '#top') {
+        e.preventDefault();
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+        history.pushState(null, '', '#home');
+        return;
+      }
+
       const targetEl = document.querySelector(targetId);
       if (!targetEl) return; // let browser handle if no target
 
       e.preventDefault();
 
       const headerHeight = header ? header.getBoundingClientRect().height : 0;
-      const top = targetEl.getBoundingClientRect().top + window.pageYOffset - headerHeight - 8;
+      const top = Math.max(0, targetEl.getBoundingClientRect().top + window.pageYOffset - headerHeight - 8);
 
       window.scrollTo({
         top,
