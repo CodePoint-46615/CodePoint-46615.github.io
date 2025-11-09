@@ -1,889 +1,1487 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- head section start starts here -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>SAIKOT - Portfolio</title>
 
     <!-- TailwindCSS CDN -->
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 
     <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Roboto&display=swap"
-        rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Roboto&display=swap"
+      rel="stylesheet"
+    />
 
     <!-- Optional custom CSS -->
-    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/main.css" />
 
     <!-- font-awesome cdn  -->
-    <script src="https://kit.fontawesome.com/bb5ec023dc.js" crossorigin="anonymous"></script>
-</head>
+    <script
+      src="https://kit.fontawesome.com/bb5ec023dc.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
 
-<body class="bg-gray-100 font-roboto min-h-screen ">
-
+  <!-- body section starts here -->
+  <body class="bg-gray-100 font-roboto min-h-screen">
     <!-- Navbar -->
     <header
-        class="fixed top-0 inset-x-0 z-50 bg-gradient-to-r from-blue-200 via-blue-400 to-cyan-500 text-gray-100 py-5 w-full shadow-md">
-        <nav class="container mx-auto flex justify-between items-center p-3">
-            <a href="#home" class="text-2xl font-bold">Saikot Kundu</a>
+      class="fixed top-0 inset-x-0 z-50 bg-gradient-to-r from-blue-200 via-blue-400 to-cyan-500 text-gray-100 py-5 w-full shadow-md"
+    >
+      <nav class="container mx-auto flex justify-between items-center p-3">
+        <a href="#home" class="text-2xl font-bold">Saikot Kundu</a>
 
-            <ul class="hidden md:flex space-x-6">
-                <li><a href="#about" class="hover:text-teal-300">About Me</a></li>
-                <li><a href="#skills" class="hover:text-teal-300">Skills</a></li>
-                <li><a href="#projects" class="hover:text-teal-300">Projects</a></li>
-                <li><a href="#education" class="hover:text-teal-300">Education</a></li>
-                <li><a href="#contact" class="hover:text-teal-300">Contact</a></li>
-            </ul>
+        <ul class="hidden md:flex space-x-6">
+          <li><a href="#about" class="hover:text-teal-300">About Me</a></li>
+          <li><a href="#skills" class="hover:text-teal-300">Skills</a></li>
+          <li><a href="#projects" class="hover:text-teal-300">Projects</a></li>
+          <li>
+            <a href="#education" class="hover:text-teal-300">Education</a>
+          </li>
+          <li><a href="#contact" class="hover:text-teal-300">Contact</a></li>
+        </ul>
 
-            <!-- Hamburger -->
-            <div class="md:hidden">
-                <button id="hamburger-menu" class="text-white text-3xl hover:cursor-pointer">☰</button>
-            </div>
-        </nav>
+        <!-- Hamburger -->
+        <div class="md:hidden">
+          <button
+            id="hamburger-menu"
+            class="text-white text-3xl hover:cursor-pointer"
+          >
+            ☰
+          </button>
+        </div>
+      </nav>
     </header>
 
     <!-- Drawer only, no black overlay -->
-    <div id="mobile-menu" class="fixed top-0 right-0 w-1/2 h-screen md:h-full bg-gradient-to-b from-blue-500 to-cyan-500 
-           text-white flex flex-col items-start p-6 space-y-6 shadow-2xl 
-           transform translate-x-full transition-transform duration-500 ease-in-out z-50 pointer-events-none">
-        <button id="close-menu" class="absolute top-5 right-5 text-3xl">✕</button>
-        <a href="#about" class="hover:text-teal-200">About Me</a>
-        <a href="#skills" class="hover:text-teal-200">Skills</a>
-        <a href="#projects" class="hover:text-teal-200">Projects</a>
-        <a href="#education" class="hover:text-teal-200">Education</a>
-        <a href="#contact" class="hover:text-teal-200">Contact</a>
+    <div
+      id="mobile-menu"
+      class="fixed top-0 right-0 w-1/2 h-screen md:h-full bg-gradient-to-b from-blue-500 to-cyan-500 text-white flex flex-col items-start p-6 space-y-6 shadow-2xl transform translate-x-full transition-transform duration-500 ease-in-out z-50 pointer-events-none"
+    >
+      <button id="close-menu" class="absolute top-5 right-5 text-3xl">✕</button>
+      <a href="#about" class="hover:text-teal-200">About Me</a>
+      <a href="#skills" class="hover:text-teal-200">Skills</a>
+      <a href="#projects" class="hover:text-teal-200">Projects</a>
+      <a href="#education" class="hover:text-teal-200">Education</a>
+      <a href="#contact" class="hover:text-teal-200">Contact</a>
     </div>
 
-
     <!-- hero section -->
-    <section id="home"
-        class="relative z-10 h-screen flex flex-col md:flex-row items-center justify-center gap-10 md:gap-30 bg-gradient-to-r from-blue-400 via-blue-700 to-cyan-900 text-white">
+    <section
+      id="home"
+      class="relative h-screen flex flex-col md:flex-row items-center justify-center gap-10 md:gap-30 text-white overflow-hidden"
+    >
+      <!-- 🔹 3D Background (Spline) -->
+      <iframe
+        src="https://my.spline.design/glasscube-EK37sW0OwK6hZFm56wVKKqae/"
+        frameborder="0"
+        class="absolute top-0 left-0 w-full h-full z-0 pointer-events-none"
+        loading="lazy"
+      ></iframe>
 
-        <!-- hero bg-image -->
-        <img src="./images/hero-bg.png" alt="" class="border rounded-full p-1 bg-white w-[300px] h-[300px]">
+      <!-- 🔹 Overlay for better readability -->
+      <div
+        class="absolute inset-0 bg-gradient-to-r from-blue-400/30 via-blue-800/40 to-cyan-900/50 z-0"
+      ></div>
 
-        <!-- hero section text -->
-        <div class="text-center">
-            <h1 class="text-3xl md:text-5xl font-bold font-montserrat text-gray-200">
-                Hello, I'm Saikot Kundu
-            </h1>
-            <p id="animated-text"
-                class="mt-4 text-lg md:text-2xl font-roboto text-teal-100 transition-opacity duration-700"></p>
+      <!-- 🔹 Profile Image -->
+      <div class="relative z-10">
+        <img
+          src="./images/hero-bg.png"
+          alt="Profile"
+          class="border-4 border-white rounded-full p-1 bg-white/70 w-[250px] h-[250px] object-cover shadow-lg"
+        />
+      </div>
 
-            <a id="btn-git" href="https://github.com/CodePoint-46615" target="_blank"
-                class="mt-6 inline-flex items-center px-6 py-5 bg-white text-blue-900 font-semibold rounded-lg shadow-lg transition transform cursor-pointer hover:bg-slate-200 active:scale-95">
-                <span class="font-bold">View My Work</span>
-                <i class="fa-brands fa-github ml-2"></i>
-            </a>
+      <!-- 🔹 Hero Text -->
+      <div class="relative z-10 text-center px-4">
+        <h1
+          class="text-3xl md:text-5xl font-bold font-montserrat text-gray-100 drop-shadow-lg"
+        >
+          Hello, I'm Saikot Kundu
+        </h1>
 
-            <!-- hero section social media  -->
-            <div class="mt-6 flex flex-row gap-3 justify-center ">
-                <a href="https://www.facebook.com/officialsaikot/" target="_blank">
-                    <i class="fa-brands fa-facebook text-gray-200 hover:text-gray-600 text-2xl"></i>
+        <p
+          id="animated-text"
+          class="mt-4 text-lg md:text-2xl font-roboto text-teal-100 transition-opacity duration-700"
+        ></p>
 
-                </a>
+        <a
+          id="btn-git"
+          href="https://github.com/CodePoint-46615"
+          target="_blank"
+          class="mt-6 inline-flex items-center px-6 py-4 bg-white text-blue-900 font-semibold rounded-lg shadow-lg transition transform cursor-pointer hover:bg-slate-200 active:scale-95"
+        >
+          <span class="font-bold">View My Work</span>
+          <i class="fa-brands fa-github ml-2 text-xl"></i>
+        </a>
 
-                <a href="https://www.linkedin.com/in/saikotkundu/" target="_blank">
-                    <i class="fa-brands fa-linkedin text-gray-200 hover:text-gray-600 text-2xl"></i>
-                </a>
-
-                <a href="https://www.reddit.com/user/Opening_Task5490/" target="_blank">
-                    <i class="fa-brands fa-reddit text-gray-200 hover:text-gray-600 text-2xl"></i>
-                </a>
-            </div>
-
+        <!-- 🔹 Social Links -->
+        <div class="mt-6 flex flex-row gap-4 justify-center">
+          <a href="https://www.facebook.com/officialsaikot/" target="_blank">
+            <i
+              class="fa-brands fa-facebook text-gray-200 hover:text-gray-400 text-2xl transition-colors"
+            ></i>
+          </a>
+          <a href="https://www.linkedin.com/in/saikotkundu/" target="_blank">
+            <i
+              class="fa-brands fa-linkedin text-gray-200 hover:text-gray-400 text-2xl transition-colors"
+            ></i>
+          </a>
+          <a
+            href="https://www.reddit.com/user/Opening_Task5490/"
+            target="_blank"
+          >
+            <i
+              class="fa-brands fa-reddit text-gray-200 hover:text-gray-400 text-2xl transition-colors"
+            ></i>
+          </a>
         </div>
-
+      </div>
     </section>
 
+    <!-- main section starts here -->
     <main class="pt-20 container mx-auto p-6 space-y-20">
+      <!-- About Me -->
+      <section
+        id="about"
+        class="transform opacity-0 translate-y-10 transition-all duration-700 flex flex-col md:flex-row items-center justify-center gap-20"
+      >
+        <div>
+          <h2 class="text-3xl font-bold text-blue-800 mb-4 text-center">
+            About Me
+          </h2>
+          <p
+            class="text-lg w-full md:w-[800px] text-justify p-5 shadow-md shadow-blue-300 rounded-xl"
+          >
+            Hi, I'm Saikot Kundu — a passionate and curious final-year Computer
+            Science student at American International University - Bangladesh. I
+            specialize in Software Development, with a growing expertise in
+            Artificial Intelligence, Machine Learning, and Deep Learning. My
+            journey in tech began with foundational programming languages like
+            C++, Java, Python, and PHP, and evolved as I explored web
+            technologies such as HTML, CSS, and JavaScript. As a fresher
+            stepping into the professional world, I aspire to become an
+            AI-enhanced software Developer, blending cutting-edge AI with robust
+            software engineering principles. I’m deeply driven by a
+            problem-solving mindset — I enjoy analyzing real-world challenges
+            and crafting smart, efficient digital solutions that make a
+            meaningful impact. My long-term vision lies in Research and
+            Development-based software solutions, where innovation meets
+            practicality. I believe in continuous learning, clean code, and
+            building systems that not only work efficiently but also think
+            intelligently.
+          </p>
+        </div>
+      </section>
 
-        <!-- About Me -->
-        <section id="about"
-            class="transform opacity-0 translate-y-10 transition-all duration-700 flex flex-col md:flex-row items-center justify-center gap-20">
-            <div>
-                <h2 class="text-3xl font-bold text-blue-800 mb-4 text-center">About Me</h2>
-                <p class="text-lg w-full md:w-[800px] text-justify p-5 shadow-md shadow-blue-300 rounded-xl">Hi, I'm
-                    Saikot Kundu — a passionate and curious final-year Computer Science student at American
-                    International University - Bangladesh. I specialize in Software Development, with a growing
-                    expertise in Artificial Intelligence, Machine Learning, and Deep Learning. My journey in tech began
-                    with foundational programming languages like C++, Java, Python, and PHP, and evolved as I explored
-                    web technologies such as HTML, CSS, and JavaScript. As a fresher stepping into the professional
-                    world, I aspire to become an AI-enhanced software Developer, blending cutting-edge AI with robust
-                    software engineering principles. I’m deeply driven by a problem-solving mindset — I enjoy analyzing
-                    real-world challenges and crafting smart, efficient digital solutions that make a meaningful impact.
-                    My long-term vision lies in Research and Development-based software solutions, where innovation
-                    meets practicality. I believe in continuous learning, clean code, and building systems that not only
-                    work efficiently but also think intelligently.
-                </p>
-            </div>
-        </section>
+      <!-- Skills -->
+      <section
+        id="skills"
+        class="transform opacity-0 translate-y-10 transition-all duration-700"
+      >
+        <h2 class="text-3xl font-bold text-blue-800 mb-4 text-center">
+          Skills
+        </h2>
 
-        <!-- Skills -->
-        <section id="skills" class="transform opacity-0 translate-y-10 transition-all duration-700">
-            <h2 class="text-3xl font-bold text-blue-800 mb-4 text-center">Skills</h2>
+        <div class="space-y-4">
+          <!-- Programming Languages -->
+          <div class="skill-group rounded-lg shadow-md bg-white">
+            <!-- Button -->
+            <button
+              class="w-full flex justify-between items-center p-4 font-semibold text-left text-gray-800 toggle-btn hover:cursor-pointer"
+            >
+              <span class="toogle-txt"> Programming Languages</span>
+              <span
+                class="arrow transition-transform bg-red-100 p-2 rounded-full"
+                >▼</span
+              >
+            </button>
 
-            <div class="space-y-4">
+            <!-- Wrapper for skills -->
+            <div class="p-4 md:p-16">
+              <!-- Main skill list -->
+              <ul
+                class="skill-list grid grid-cols-1 md:grid-cols-4 gap-5 items-center"
+              >
+                <li
+                  class="shadow-lg p-3 rounded-lg hover:scale-105 transition-transform w-full md:w-[250px] h-full"
+                >
+                  <img
+                    src="./images/c++.svg"
+                    alt="c++"
+                    class="mx-auto w-[50px] h-[50px]"
+                  />
+                  <h1 class="text-center font-medium mt-2">C++</h1>
+                </li>
 
-                <!-- Programming Languages -->
-                <div class="skill-group rounded-lg shadow-md bg-white">
-                    <!-- Button -->
-                    <button
-                        class="w-full flex justify-between items-center p-4 font-semibold text-left text-gray-800 toggle-btn hover:cursor-pointer">
-                        <span class="toogle-txt"> Programming Languages</span>
-                        <span class="arrow transition-transform bg-red-100 p-2 rounded-full">▼</span>
-                    </button>
+                <li
+                  class="shadow-lg p-3 rounded-lg hover:scale-105 transition-transform w-full md:w-[250px] h-full"
+                >
+                  <img
+                    src="./images/java.svg"
+                    alt="java"
+                    class="mx-auto w-[50px] h-[50px]"
+                  />
+                  <h1 class="text-center font-normal">Java</h1>
+                </li>
 
-                    <!-- Wrapper for skills -->
-                    <div class="p-4 md:p-16 ">
-                        <!-- Main skill list -->
-                        <ul class="skill-list grid grid-cols-1 md:grid-cols-4 gap-5 items-center">
-                            <li
-                                class=" shadow-lg p-3 rounded-lg hover:scale-105 transition-transform w-full md:w-[250px] h-full">
-                                <img src="./images/c++.svg" alt="c++" class="mx-auto w-[50px] h-[50px]">
-                                <h1 class="text-center font-medium mt-2">C++</h1>
-                            </li>
+                <li
+                  class="shadow-lg p-3 rounded-lg hover:scale-105 transition-transform w-full md:w-[250px] h-full"
+                >
+                  <img
+                    src="./images/C_sharp.svg"
+                    alt="c-sharp"
+                    class="w-[50px] h-[50px] mx-auto"
+                  />
+                  <h1 class="text-center font-normal">C#</h1>
+                </li>
 
-                            <li
-                                class="shadow-lg p-3 rounded-lg hover:scale-105 transition-transform w-full md:w-[250px] h-full">
-                                <img src="./images/java.svg" alt="java" class="mx-auto w-[50px] h-[50px]">
-                                <h1 class="text-center font-normal">Java</h1>
-                            </li>
+                <li
+                  class="shadow-lg p-3 rounded-lg hover:scale-105 transition-transform w-full md:w-[250px] h-full"
+                >
+                  <img
+                    src="./images/python.svg"
+                    alt="python"
+                    class="mx-auto w-[50px] h-[50px]"
+                  />
+                  <h1 class="text-center font-normal">Python</h1>
+                </li>
 
-                            <li
-                                class="shadow-lg p-3 rounded-lg hover:scale-105 transition-transform w-full md:w-[250px] h-full">
-                                <img src="./images/C_sharp.svg" alt="c-sharp" class="w-[50px] h-[50px] mx-auto">
-                                <h1 class="text-center font-normal">C#</h1>
+                <li
+                  class="shadow-lg p-3 rounded-lg hover:scale-105 transition-transform w-full md:w-[250px] h-full"
+                >
+                  <img
+                    src="./images/javascript.svg"
+                    alt="javascript"
+                    class="mx-auto w-[50px] h-[50px]"
+                  />
+                  <h1 class="text-center font-normal">JavaScript</h1>
+                </li>
 
-                            </li>
+                <li
+                  class="shadow-lg p-3 rounded-lg hover:scale-105 transition-transform w-full md:w-[250px] h-full"
+                >
+                  <img
+                    src="./images/php.svg"
+                    alt="php"
+                    class="mx-auto w-[50px] h-[50px]"
+                  />
+                  <h1 class="text-center font-normal">PHP</h1>
+                </li>
+              </ul>
 
-                            <li
-                                class="shadow-lg p-3 rounded-lg hover:scale-105 transition-transform w-full md:w-[250px] h-full">
-                                <img src="./images/python.svg" alt="python" class="mx-auto w-[50px] h-[50px]">
-                                <h1 class="text-center font-normal">Python</h1>
+              <!-- Preference list -->
+              <div class="mt-15">
+                <h1 class="font-semibold text-left text-gray-800 mt-5 mb-5">
+                  Comfortable at
+                </h1>
+                <ul
+                  class="preference-list flex flex-col md:flex-row gap-5 items-center"
+                >
+                  <li
+                    class="shadow-lg p-3 rounded-lg hover:scale-105 transition-transform w-full md:w-[250px] h-full"
+                  >
+                    <img
+                      src="./images/javascript.svg"
+                      alt="javascript"
+                      class="mx-auto w-[50px] h-[50px]"
+                    />
+                    <h1 class="text-center font-normal">JavaScript</h1>
+                  </li>
 
-                            </li>
+                  <li
+                    class="shadow-lg p-3 rounded-lg hover:scale-105 transition-transform w-full md:w-[250px] h-full"
+                  >
+                    <img
+                      src="./images/java.svg"
+                      alt="java"
+                      class="mx-auto w-[50px] h-[50px]"
+                    />
+                    <h1 class="text-center font-normal">Java</h1>
+                  </li>
 
-                            <li
-                                class="shadow-lg p-3 rounded-lg hover:scale-105 transition-transform w-full md:w-[250px] h-full">
-                                <img src="./images/javascript.svg" alt="javascript" class="mx-auto w-[50px] h-[50px]">
-                                <h1 class="text-center font-normal">JavaScript</h1>
-
-                            </li>
-
-                            <li
-                                class="shadow-lg p-3 rounded-lg hover:scale-105 transition-transform w-full md:w-[250px] h-full">
-                                <img src="./images/php.svg" alt="php" class="mx-auto w-[50px] h-[50px]">
-                                <h1 class="text-center font-normal">PHP</h1>
-
-                            </li>
-                        </ul>
-
-                        <!-- Preference list -->
-                        <div class="mt-15">
-                            <h1 class="font-semibold text-left text-gray-800 mt-5 mb-5">Comfortable at</h1>
-                            <ul class="preference-list flex flex-col md:flex-row gap-5 items-center">
-                                <li
-                                    class="shadow-lg p-3 rounded-lg hover:scale-105 transition-transform w-full md:w-[250px] h-full">
-                                    <img src="./images/javascript.svg" alt="javascript"
-                                        class="mx-auto w-[50px] h-[50px]">
-                                    <h1 class="text-center font-normal">JavaScript</h1>
-                                </li>
-
-                                <li
-                                    class="shadow-lg p-3 rounded-lg hover:scale-105 transition-transform w-full md:w-[250px] h-full">
-                                    <img src="./images/java.svg" alt="java" class="mx-auto w-[50px] h-[50px]">
-                                    <h1 class="text-center font-normal">Java</h1>
-                                </li>
-
-                                <!-- <li
+                  <!-- <li
                                     class="shadow-lg p-3 rounded-lg hover:scale-105 transition-transform w-full md:w-[250px] h-full">
                                     <img src="./images/python.svg" alt="python" class="mx-auto w-[50px] h-[50px]">
                                     <h1 class="text-center font-normal">Python</h1>
                                 </li> -->
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Basic Webtechnologies -->
-                <div class="skill-group rounded-lg shadow-md bg-white">
-                    <!-- Button -->
-                    <button
-                        class="w-full flex justify-between items-center p-4 font-semibold text-left text-gray-800 toggle-btn hover:cursor-pointer">
-                        <span class="toogle-txt"> Basic Web Technologies</span>
-                        <span class="arrow transition-transform bg-red-100 p-2 rounded-full">▼</span>
-                    </button>
-
-                    <!-- Wrapper for skills -->
-                    <div class="p-4 md:p-16 ">
-                        <!-- Main skill list -->
-                        <ul class="skill-list grid grid-cols-1 md:grid-cols-4 gap-5 items-center">
-                            <li
-                                class=" shadow-lg p-3 rounded-lg hover:scale-105 transition-transform w-full md:w-[250px] h-full">
-                                <img src="./images/html.svg" alt="html" class="mx-auto w-[50px] h-[50px]">
-                                <h1 class="text-center font-medium mt-2">HTML</h1>
-
-                            </li>
-
-                            <li
-                                class=" shadow-lg p-3 rounded-lg hover:scale-105 transition-transform w-full md:w-[250px] h-full">
-                                <img src="./images/css.svg" alt="css" class="mx-auto w-[50px] h-[50px]">
-                                <h1 class="text-center font-medium mt-2">CSS</h1>
-
-                            </li>
-
-                            <li
-                                class=" shadow-lg p-3 rounded-lg hover:scale-105 transition-transform w-full md:w-[250px] h-full">
-                                <img src="./images/es6.svg" alt="es6" class="mx-auto w-[50px] h-[50px]">
-                                <h1 class="text-center font-medium mt-2">ES6</h1>
-
-                            </li>
-
-
-                        </ul>
-                    </div>
-                </div>
-
-                <!-- Frontend Technologies -->
-                <div class="skill-group rounded-lg shadow-md bg-white">
-                    <!-- Button -->
-                    <button
-                        class="w-full flex justify-between items-center p-4 font-semibold text-left text-gray-800 toggle-btn hover:cursor-pointer">
-                        <span class="toogle-txt"> Frontend Technologies (In Process)</span>
-                        <span class="arrow transition-transform bg-red-100 p-2 rounded-full">▼</span>
-                    </button>
-
-                    <!-- Wrapper for skills -->
-                    <div class="p-4 md:p-16 ">
-                        <!-- Main skill list -->
-                        <ul class="skill-list grid grid-cols-1 md:grid-cols-4 gap-5 items-center">
-                            <li
-                                class=" shadow-lg p-3 rounded-lg hover:scale-105 transition-transform w-full md:w-[250px] h-full">
-                                <img src="./images/react.svg" alt="react" class="mx-auto w-[50px] h-[50px]">
-                                <h1 class="text-center font-medium mt-2">React</h1>
-
-                            </li>
-
-                            <li
-                                class=" shadow-lg p-3 rounded-lg hover:scale-105 transition-transform w-full md:w-[250px] h-full">
-                                <img src="./images/next.svg" alt="css" class="mx-auto w-[50px] h-[50px]">
-                                <h1 class="text-center font-medium mt-2">Next</h1>
-
-                            </li>
-
-
-                        </ul>
-                    </div>
-                </div>
-
-                <!-- Backend Technologies -->
-                <div class="skill-group rounded-lg shadow-md bg-white">
-                    <!-- Button -->
-                    <button
-                        class="w-full flex justify-between items-center p-4 font-semibold text-left text-gray-800 toggle-btn hover:cursor-pointer">
-                        <span class="toogle-txt"> Backend Technologies </span>
-                        <span class="arrow transition-transform bg-red-100 p-2 rounded-full">▼</span>
-                    </button>
-
-                    <!-- Wrapper for skills -->
-                    <div class="p-4 md:p-16 ">
-                        <!-- Main skill list -->
-                        <ul class="skill-list grid grid-cols-1 md:grid-cols-4 gap-5 items-center">
-                            <li
-                                class=" shadow-lg p-3 rounded-lg hover:scale-105 transition-transform w-full md:w-[250px] h-full">
-                                <img src="./images/spring-mvc.svg" alt="spboot" class="mx-auto w-[50px] h-[50px]">
-                                <h1 class="text-center font-medium mt-2">Spring MVC</h1>
-
-                            </li>
-
-                            <li
-                                class=" shadow-lg p-3 rounded-lg hover:scale-105 transition-transform w-full md:w-[250px] h-full">
-                                <img src="./images/spring-boot.svg" alt="spboot" class="mx-auto w-[50px] h-[50px]">
-                                <h1 class="text-center font-medium mt-2">Spring Boot</h1>
-
-                            </li>
-
-                            <li
-                                class=" shadow-lg p-3 rounded-lg hover:scale-105 transition-transform w-full md:w-[250px] h-full">
-                                <img src="./images/nestjs.svg" alt="nest" class="mx-auto w-[50px] h-[50px]">
-                                <h1 class="text-center font-medium mt-2">Nest</h1>
-
-                            </li>
-
-
-                        </ul>
-                    </div>
-                </div>
-
-                <!-- Database -->
-                <div class="skill-group rounded-lg shadow-md bg-white">
-                    <!-- Button -->
-                    <button
-                        class="w-full flex justify-between items-center p-4 font-semibold text-left text-gray-800 toggle-btn hover:cursor-pointer">
-                        <span class="toogle-txt"> Database </span>
-                        <span class="arrow transition-transform bg-red-100 p-2 rounded-full">▼</span>
-                    </button>
-
-                    <!-- Wrapper for skills -->
-                    <div class="p-4 md:p-16 ">
-                        <!-- Main skill list -->
-                        <ul class="skill-list grid grid-cols-1 md:grid-cols-4 gap-5 items-center">
-                            <li
-                                class=" shadow-lg p-3 rounded-lg hover:scale-105 transition-transform w-full md:w-[250px] h-full">
-                                <img src="./images/mysql.svg" alt="mysql" class="mx-auto w-[50px] h-[50px]">
-                                <h1 class="text-center font-medium mt-2">MySQL</h1>
-
-                            </li>
-
-                            <li
-                                class=" shadow-lg p-3 rounded-lg hover:scale-105 transition-transform w-full md:w-[250px] h-full">
-                                <img src="./images/postgresql.svg" alt="postgresql" class="mx-auto w-[50px] h-[50px]">
-                                <h1 class="text-center font-medium mt-2">PostgreSQL</h1>
-
-                            </li>
-
-                        </ul>
-                    </div>
-                </div>
-
-                <!-- Data Science -->
-                <div class="skill-group rounded-lg shadow-md bg-white">
-                    <!-- Button -->
-                    <button
-                        class="w-full flex justify-between items-center p-4 font-semibold text-left text-gray-800 toggle-btn hover:cursor-pointer">
-                        <span class="toogle-txt"> Data Science </span>
-                        <span class="arrow transition-transform bg-red-100 p-2 rounded-full">▼</span>
-                    </button>
-
-                    <!-- Wrapper for skills -->
-                    <div class="p-4 md:p-16 ">
-                        <!-- Main skill list -->
-                        <ul class="skill-list grid grid-cols-1 md:grid-cols-4 gap-5 items-center">
-                            <li
-                                class=" shadow-lg p-3 rounded-lg hover:scale-105 transition-transform w-full md:w-[250px] h-full">
-                                <img src="./images/numpy.svg" alt="numpy" class="mx-auto w-[50px] h-[50px]">
-                                <h1 class="text-center font-medium mt-2">NumPy</h1>
-
-                            </li>
-
-                            <li
-                                class=" shadow-lg p-3 rounded-lg hover:scale-105 transition-transform w-full md:w-[250px] h-full">
-                                <img src="./images/matplotlib.svg" alt="matplotlib" class="mx-auto w-[50px] h-[50px]">
-                                <h1 class="text-center font-medium mt-2">Matplotlib</h1>
-
-                            </li>
-
-                        </ul>
-                    </div>
-                </div>
-
-                <!-- Development Tools & Platforms -->
-                <div class="skill-group rounded-lg shadow-md bg-white">
-                    <!-- Button -->
-                    <button
-                        class="w-full flex justify-between items-center p-4 font-semibold text-left text-gray-800 toggle-btn hover:cursor-pointer">
-                        <span class="toogle-txt"> Development Tools & Platforms </span>
-                        <span class="arrow transition-transform bg-red-100 p-2 rounded-full">▼</span>
-                    </button>
-
-                    <!-- Wrapper for skills -->
-                    <div class="p-4 md:p-16 ">
-                        <!-- Main skill list -->
-                        <ul class="skill-list grid grid-cols-1 md:grid-cols-4 gap-5 items-center">
-                            <li
-                                class=" shadow-lg p-3 rounded-lg hover:scale-105 transition-transform w-full md:w-[250px] h-full">
-                                <img src="./images/Codeblocks.png" alt="cblock" class="mx-auto w-[50px] h-[50px]">
-                                <h1 class="text-center font-medium mt-2">Code Block</h1>
-
-                            </li>
-
-                            <li
-                                class=" shadow-lg p-3 rounded-lg hover:scale-105 transition-transform w-full md:w-[250px] h-full">
-                                <img src="./images/visual-studio-code.svg" alt="vscode"
-                                    class="mx-auto w-[50px] h-[50px]">
-                                <h1 class="text-center font-medium mt-2">Visual Studio Code</h1>
-
-                            </li>
-
-                            <li
-                                class=" shadow-lg p-3 rounded-lg hover:scale-105 transition-transform w-full md:w-[250px] h-full">
-                                <img src="./images/visual-studio.svg" alt="vs" class="mx-auto w-[50px] h-[50px]">
-                                <h1 class="text-center font-medium mt-2">Visual Studio</h1>
-
-                            </li>
-
-                            <li
-                                class=" shadow-lg p-3 rounded-lg hover:scale-105 transition-transform w-full md:w-[250px] h-full">
-                                <img src="./images/intellij-idea.svg" alt="intelij" class="mx-auto w-[50px] h-[50px]">
-                                <h1 class="text-center font-medium mt-2">IntelliJ IDEA</h1>
-
-                            </li>
-
-                            <li
-                                class=" shadow-lg p-3 rounded-lg hover:scale-105 transition-transform w-full md:w-[250px] h-full">
-                                <img src="./images/colab.jpg" alt="colab" class="mx-auto w-[50px] h-[50px]">
-                                <h1 class="text-center font-medium mt-2">Colab</h1>
-
-                            </li>
-
-                            <li
-                                class=" shadow-lg p-3 rounded-lg hover:scale-105 transition-transform w-full md:w-[250px] h-full">
-                                <img src="./images/git.svg" alt="git" class="mx-auto w-[50px] h-[50px]">
-                                <h1 class="text-center font-medium mt-2">Git</h1>
-
-                            </li>
-
-                            <li
-                                class=" shadow-lg p-3 rounded-lg hover:scale-105 transition-transform w-full md:w-[250px] h-full">
-                                <img src="./images/github.svg" alt="github" class="mx-auto w-[50px] h-[50px]">
-                                <h1 class="text-center font-medium mt-2">GitHub</h1>
-
-                            </li>
-
-                            <li
-                                class=" shadow-lg p-3 rounded-lg hover:scale-105 transition-transform w-full md:w-[250px] h-full">
-                                <img src="./images/linux.svg" alt="linux" class="mx-auto w-[50px] h-[50px]">
-                                <h1 class="text-center font-medium mt-2">Linux</h1>
-
-                            </li>
-                        </ul>
-                    </div>
-                </div>
+                </ul>
+              </div>
             </div>
-        </section>
+          </div>
 
+          <!-- Basic Web technologies -->
+          <div class="skill-group rounded-lg shadow-md bg-white">
+            <!-- Button -->
+            <button
+              class="w-full flex justify-between items-center p-4 font-semibold text-left text-gray-800 toggle-btn hover:cursor-pointer"
+            >
+              <span class="toogle-txt"> Basic Web Technologies</span>
+              <span
+                class="arrow transition-transform bg-red-100 p-2 rounded-full"
+                >▼</span
+              >
+            </button>
 
-        <!-- Projects -->
-        <section id="projects" class="transform opacity-0 translate-y-10 transition-all duration-700">
-            <h2 class="text-3xl font-bold text-blue-800 mb-4 text-center">Projects</h2>
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <!-- Wrapper for skills -->
+            <div class="p-4 md:p-16">
+              <!-- Main skill list -->
+              <ul
+                class="skill-list grid grid-cols-1 md:grid-cols-4 gap-5 items-center"
+              >
+                <li
+                  class="shadow-lg p-3 rounded-lg hover:scale-105 transition-transform w-full md:w-[250px] h-full"
+                >
+                  <img
+                    src="./images/html.svg"
+                    alt="html"
+                    class="mx-auto w-[50px] h-[50px]"
+                  />
+                  <h1 class="text-center font-medium mt-2">HTML</h1>
+                </li>
 
-                <!-- project-1 -->
-                <div class="bg-white p-6 rounded-lg shadow-md hover:translate-y-[-5px] hover:shadow-xl transition-all">
-                    <h3 class="font-semibold text-xl text-blue-800 mb-2">
-                        JAVA - Student Management System
-                    </h3>
+                <li
+                  class="shadow-lg p-3 rounded-lg hover:scale-105 transition-transform w-full md:w-[250px] h-full"
+                >
+                  <img
+                    src="./images/css.svg"
+                    alt="css"
+                    class="mx-auto w-[50px] h-[50px]"
+                  />
+                  <h1 class="text-center font-medium mt-2">CSS</h1>
+                </li>
 
-                    <!-- Image slider -->
-                    <div class="relative overflow-hidden rounded-lg slider" data-slider>
-                        <div class="flex transition-transform duration-500" data-slides>
-                            <img src="./images/java-project.jpg" alt="Slide 1" class="w-full flex-shrink-0">
-                            <img src="./images/java-project.jpg" alt="Slide 2" class="w-full flex-shrink-0">
-                            <img src="./images/java-project.jpg" alt="Slide 3" class="w-full flex-shrink-0">
-                        </div>
-
-                        <!-- controls -->
-                        <button
-                            class="absolute top-1/2 left-2 transform -translate-y-1/2 bg-gray-800 text-white px-2 py-1 rounded hover:cursor-pointer"
-                            data-prev>‹</button>
-                        <button
-                            class="absolute top-1/2 right-2 transform -translate-y-1/2 bg-gray-800 text-white px-2 py-1 rounded hover:cursor-pointer"
-                            data-next>›</button>
-                    </div>
-
-                    <!-- Description with See More -->
-                    <p class="text-sm text-gray-700 mb-2 text-justify mt-3 line-clamp-3" data-desc>
-                        This was my very first Java project—a desktop-based Student Management System built using Java
-                        Swing.
-                        The application includes features such as adding new students, an admin panel for managing
-                        records,
-                        and a basic graphical user interface. While there are some areas for improvement, this project
-                        helped
-                        me gain hands-on experience with Java GUI components, object-oriented programming, and
-                        event-driven design.<br><br>
-                        <span class="font-bold">Terms:</span> <span class="text-gray-500">Java, Object-oriented
-                            programming, Java GUI components, Java Swing</span>
-                    </p>
-                    <button class="text-teal-500 hover:underline hover:cursor-pointer text-sm" data-toggle>See
-                        more</button>
-
-                    <a href="#" class="block mt-3 text-teal-300 hover:underline hover:cursor-pointer">View Project</a>
-                </div>
-
-                <!-- project-2 -->
-                <div class="bg-white p-6 rounded-lg shadow-md hover:translate-y-[-5px] hover:shadow-xl transition-all">
-                    <h3 class="font-semibold text-xl text-blue-800 mb-2">
-                        Uran Travel & Tour
-                    </h3>
-
-                    <!-- Image slider -->
-                    <div class="relative overflow-hidden rounded-lg slider" data-slider>
-                        <div class="flex transition-transform duration-500" data-slides>
-                            <img src="./images/db-project.jpg" alt="Slide 1" class="w-full flex-shrink-0">
-                            <img src="./images/db-project.jpg" alt="Slide 2" class="w-full flex-shrink-0">
-                            <img src="./images/db-project.jpg" alt="Slide 3" class="w-full flex-shrink-0">
-                        </div>
-
-                        <!-- controls -->
-                        <button
-                            class="absolute top-1/2 left-2 transform -translate-y-1/2 bg-gray-800 text-white px-2 py-1 rounded hover:cursor-pointer"
-                            data-prev>‹</button>
-                        <button
-                            class="absolute top-1/2 right-2 transform -translate-y-1/2 bg-gray-800 text-white px-2 py-1 rounded hover:cursor-pointer"
-                            data-next>›</button>
-                    </div>
-
-                    <!-- Description with See More -->
-                    <p class="text-sm text-gray-700 mb-2 text-justify mt-3 line-clamp-3" data-desc>
-                        ‘Uran’ is a company that operates an air ticket booking and boarding management system. The
-                        system is managed by managers who oversee ticket agents. Ticket agents sell tickets to
-                        customers. Customers can buy tickets for themselves or other passengers. Passengers must need a
-                        ticket for boarding on planes. The company also stores the route of planes.<br><br>
-                        <span class="font-bold">Terms:</span> <span class="text-gray-500">Database, DBMS, Oracle</span>
-                    </p>
-                    <button class="text-teal-500 hover:underline hover:cursor-pointer text-sm" data-toggle>See
-                        more</button>
-
-                    <a href="#" class="block mt-3 text-teal-300 hover:underline hover:cursor-pointer">View Project</a>
-                </div>
-
-                <!-- project-3 -->
-                <div class="bg-white p-6 rounded-lg shadow-md hover:translate-y-[-5px] hover:shadow-xl transition-all">
-                    <h3 class="font-semibold text-xl text-blue-800 mb-2">
-                        Ananda Niloy Orphanage
-                    </h3>
-
-                    <!-- Image slider -->
-                    <div class="relative overflow-hidden rounded-lg slider" data-slider>
-                        <div class="flex transition-transform duration-500" data-slides>
-                            <img src="./images/csharp-project-1.jpg" alt="Slide 1" class="w-full flex-shrink-0">
-                            <img src="./images/csharp-project-2.jpg" alt="Slide 2" class="w-full flex-shrink-0">
-                            <img src="./images/csharp-project-3.jpg" alt="Slide 3" class="w-full flex-shrink-0">
-                        </div>
-
-                        <!-- controls -->
-                        <button
-                            class="absolute top-1/2 left-2 transform -translate-y-1/2 bg-gray-800 text-white px-2 py-1 rounded hover:cursor-pointer"
-                            data-prev>‹</button>
-                        <button
-                            class="absolute top-1/2 right-2 transform -translate-y-1/2 bg-gray-800 text-white px-2 py-1 rounded hover:cursor-pointer"
-                            data-next>›</button>
-                    </div>
-
-                    <!-- Description with See More -->
-                    <p class="text-sm text-gray-700 mb-2 text-justify mt-3 line-clamp-3" data-desc>
-                        Our Helping Hands Project focuses on creating a user-friendly software system to help orphanages
-                        manage their day-to-day activities more efficiently. This initiative aims to simplify tasks like
-                        keeping track of resident information, managing staff details, and overseeing daily operations.
-                        By incorporating features such as admissions, attendance tracking, and resource management, we
-                        aim to make the administrative aspects smoother, fostering a transparent and caring environment
-                        for the children. With the Helping Hands Project, we're striving to enhance the overall
-                        well-being of those under the care of orphanages, allowing caretakers to focus on providing the
-                        best support and nurturing atmosphere.<br><br>
-                        <span class="font-bold">Terms:</span> <span class="text-gray-500">C#, Object-oriented
-                            Programming, Microsoft SQL Server Management Studio</span>
-                    </p>
-                    <button class="text-teal-500 hover:underline hover:cursor-pointer text-sm" data-toggle>See
-                        more</button>
-
-                    <a href="#" class="block mt-3 text-teal-300 hover:underline hover:cursor-pointer">View Project</a>
-                </div>
-
-                <!-- project-4 -->
-                <div class="bg-white p-6 rounded-lg shadow-md hover:translate-y-[-5px] hover:shadow-xl transition-all">
-                    <h3 class="font-semibold text-xl text-blue-800 mb-2">
-                        Agripro
-                    </h3>
-
-                    <!-- Image slider -->
-                    <div class="relative overflow-hidden rounded-lg slider" data-slider>
-                        <div class="flex transition-transform duration-500" data-slides>
-                            <img src="./images/web-tech-project.jpg" alt="Slide 1" class="w-full flex-shrink-0">
-                            <img src="./images/web-tech-project.jpg" alt="Slide 2" class="w-full flex-shrink-0">
-                            <img src="./images/web-tech-project.jpg" alt="Slide 3" class="w-full flex-shrink-0">
-                        </div>
-
-                        <!-- controls -->
-                        <button
-                            class="absolute top-1/2 left-2 transform -translate-y-1/2 bg-gray-800 text-white px-2 py-1 rounded hover:cursor-pointer"
-                            data-prev>‹</button>
-                        <button
-                            class="absolute top-1/2 right-2 transform -translate-y-1/2 bg-gray-800 text-white px-2 py-1 rounded hover:cursor-pointer"
-                            data-next>›</button>
-                    </div>
-
-                    <!-- Description with See More -->
-                    <p class="text-sm text-gray-700 mb-2 text-justify mt-3 line-clamp-3" data-desc>
-                        AgriPro is a web app for farmers and agribusinesses. It simplifies farming with tools for crop
-                        management, market trends, weather updates, and farming tips. With user-friendly dashboards and
-                        multilingual support, it promotes sustainable farming, boosts yields, and aids better decisions.
-                        Version 1.0 lays the foundation for future improvements.<br><br>
-                        <span class="font-bold">Terms:</span> <span class="text-gray-500">HTML, Vanila CSS, JavaScript,
-                            Vanila PHP</span>
-                    </p>
-                    <button class="text-teal-500 hover:underline hover:cursor-pointer text-sm" data-toggle>See
-                        more</button>
-
-                    <a href="#" class="block mt-3 text-teal-300 hover:underline hover:cursor-pointer">View Project</a>
-                </div>
-
-                <!-- project-5 -->
-                <div class="bg-white p-6 rounded-lg shadow-md hover:translate-y-[-5px] hover:shadow-xl transition-all">
-                    <h3 class="font-semibold text-xl text-blue-800 mb-2">
-                        Agershipment
-                    </h3>
-
-                    <!-- Image slider -->
-                    <div class="relative overflow-hidden rounded-lg slider" data-slider>
-                        <div class="flex transition-transform duration-500" data-slides>
-                            <img src="./images/sqat-project.jpg" alt="Slide 1" class="w-full flex-shrink-0">
-                            <img src="./images/sqat-project.jpg" alt="Slide 2" class="w-full flex-shrink-0">
-                            <img src="./images/sqat-project.jpg" alt="Slide 3" class="w-full flex-shrink-0">
-                        </div>
-
-                        <!-- controls -->
-                        <button
-                            class="absolute top-1/2 left-2 transform -translate-y-1/2 bg-gray-800 text-white px-2 py-1 rounded hover:cursor-pointer"
-                            data-prev>‹</button>
-                        <button
-                            class="absolute top-1/2 right-2 transform -translate-y-1/2 bg-gray-800 text-white px-2 py-1 rounded hover:cursor-pointer"
-                            data-next>›</button>
-                    </div>
-
-                    <!-- Description with See More -->
-                    <p class="text-sm text-gray-700 mb-2 text-justify mt-3 line-clamp-3" data-desc>
-                        This was one of my early experiences in software quality assurance and testing. The document
-                        summarizes multiple SQAT projects where I explored various testing methodologies and tools in
-                        real-world scenarios. While some areas can be refined further, this work gave me practical
-                        exposure to manual and automated testing, bug tracking, test case design, and reporting. It
-                        helped me understand the importance of quality assurance in the software development lifecycle
-                        and how to apply testing strategies effectively.<br><br>
-                        <span class="font-bold">Terms:</span> <span class="text-gray-500">Test Cases, Software Quality &
-                            Assurance Testing</span>
-                    </p>
-                    <button class="text-teal-500 hover:underline hover:cursor-pointer text-sm" data-toggle>See
-                        more</button>
-
-                    <a href="#" class="block mt-3 text-teal-300 hover:underline hover:cursor-pointer">View Project</a>
-                </div>
-
-                <!-- project-6-->
-                <div class="bg-white p-6 rounded-lg shadow-md hover:translate-y-[-5px] hover:shadow-xl transition-all">
-                    <h3 class="font-semibold text-xl text-blue-800 mb-2">
-                        Shomoysheba
-                    </h3>
-
-                    <!-- Image slider -->
-                    <div class="relative overflow-hidden rounded-lg slider" data-slider>
-                        <div class="flex transition-transform duration-500" data-slides>
-                            <img src="./images/spring-boot.jpg" alt="Slide 1" class="w-full flex-shrink-0">
-                            <img src="./images/spring-boot.jpg" alt="Slide 2" class="w-full flex-shrink-0">
-                            <img src="./images/spring-boot.jpg" alt="Slide 3" class="w-full flex-shrink-0">
-                        </div>
-
-                        <!-- controls -->
-                        <button
-                            class="absolute top-1/2 left-2 transform -translate-y-1/2 bg-gray-800 text-white px-2 py-1 rounded hover:cursor-pointer"
-                            data-prev>‹</button>
-                        <button
-                            class="absolute top-1/2 right-2 transform -translate-y-1/2 bg-gray-800 text-white px-2 py-1 rounded hover:cursor-pointer"
-                            data-next>›</button>
-                    </div>
-
-                    <!-- Description with See More -->
-                    <p class="text-sm text-gray-700 mb-2 text-justify mt-3 line-clamp-3" data-desc>
-                        A fully Backend-based project.<br><br>
-                        <span class="font-bold">Terms:</span> <span class="text-gray-500">Java, collection-framework,
-                            stream-api, spring-boot, maven, BCrypt-Security, JWT Authentication, MySQL Relational
-                            Databse</span>
-                    </p>
-                    <button class="text-teal-500 hover:underline hover:cursor-pointer text-sm" data-toggle>See
-                        more</button>
-
-                    <a href="https://github.com/CodePoint-46615/Shomoysheba.git" target="_blank"
-                        class="block mt-3 text-teal-300 hover:underline hover:cursor-pointer">View Project</a>
-                </div>
-
-                <!-- project-7 -->
-                <div class="bg-white p-6 rounded-lg shadow-md hover:translate-y-[-5px] hover:shadow-xl transition-all">
-                    <h3 class="font-semibold text-xl text-blue-800 mb-2">
-                        ExhibitPro
-                    </h3>
-
-                    <!-- Image slider -->
-                    <div class="relative overflow-hidden rounded-lg slider" data-slider>
-                        <div class="flex transition-transform duration-500" data-slides>
-                            <img src="./images/nest.jpg" alt="Slide 1" class="w-full flex-shrink-0">
-                            <img src="./images/nest.jpg" alt="Slide 2" class="w-full flex-shrink-0">
-                            <img src="./images/nest.jpg" alt="Slide 3" class="w-full flex-shrink-0">
-                        </div>
-
-                        <!-- controls -->
-                        <button
-                            class="absolute top-1/2 left-2 transform -translate-y-1/2 bg-gray-800 text-white px-2 py-1 rounded hover:cursor-pointer"
-                            data-prev>‹</button>
-                        <button
-                            class="absolute top-1/2 right-2 transform -translate-y-1/2 bg-gray-800 text-white px-2 py-1 rounded hover:cursor-pointer"
-                            data-next>›</button>
-                    </div>
-
-                    <!-- Description with See More -->
-                    <p class="text-sm text-gray-700 mb-2 text-justify mt-3 line-clamp-3" data-desc>
-                        A fully Backend-based project.<br><br>
-                        <span class="font-bold">Terms:</span> <span class="text-gray-500">JavaScript, TypeScript, Nest
-                            Framework, JWT Authentication, BCrypt Security, PostgreSQL Relational Database</span>
-                    </p>
-                    <button class="text-teal-500 hover:underline hover:cursor-pointer text-sm" data-toggle>See
-                        more</button>
-
-                    <a href="https://github.com/CodePoint-46615/exhibitPro.git" target="_blank"
-                        class="block mt-3 text-teal-300 hover:underline hover:cursor-pointer">View Project</a>
-                </div>
+                <li
+                  class="shadow-lg p-3 rounded-lg hover:scale-105 transition-transform w-full md:w-[250px] h-full"
+                >
+                  <img
+                    src="./images/es6.svg"
+                    alt="es6"
+                    class="mx-auto w-[50px] h-[50px]"
+                  />
+                  <h1 class="text-center font-medium mt-2">ES6</h1>
+                </li>
+              </ul>
             </div>
-        </section>
+          </div>
 
+          <!-- Frontend Technologies -->
+          <div class="skill-group rounded-lg shadow-md bg-white">
+            <!-- Button -->
+            <button
+              class="w-full flex justify-between items-center p-4 font-semibold text-left text-gray-800 toggle-btn hover:cursor-pointer"
+            >
+              <span class="toogle-txt">
+                Frontend Technologies (In Process)</span
+              >
+              <span
+                class="arrow transition-transform bg-red-100 p-2 rounded-full"
+                >▼</span
+              >
+            </button>
 
-        <!-- Education -->
-        <section id="education" class="py-16 bg-gray-50">
-            <h2 class="text-3xl font-bold text-blue-800 mb-12 text-center">Education</h2>
+            <!-- Wrapper for skills -->
+            <div class="p-4 md:p-16">
+              <!-- Main skill list -->
+              <ul
+                class="skill-list grid grid-cols-1 md:grid-cols-4 gap-5 items-center"
+              >
+                <li
+                  class="shadow-lg p-3 rounded-lg hover:scale-105 transition-transform w-full md:w-[250px] h-full"
+                >
+                  <img
+                    src="./images/react.svg"
+                    alt="react"
+                    class="mx-auto w-[50px] h-[50px]"
+                  />
+                  <h1 class="text-center font-medium mt-2">React</h1>
+                </li>
 
-            <div class="relative container mx-auto px-4">
-                <!-- vertical timeline line -->
-                <div
-                    class="absolute md:left-1/2 left-6 transform md:-translate-x-1/2 h-full border-l-4 bg-gradient-to-b from-blue-400 to-blue-600">
+                <li
+                  class="shadow-lg p-3 rounded-lg hover:scale-105 transition-transform w-full md:w-[250px] h-full"
+                >
+                  <img
+                    src="./images/next.svg"
+                    alt="css"
+                    class="mx-auto w-[50px] h-[50px]"
+                  />
+                  <h1 class="text-center font-medium mt-2">Next</h1>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Backend Technologies -->
+          <div class="skill-group rounded-lg shadow-md bg-white">
+            <!-- Button -->
+            <button
+              class="w-full flex justify-between items-center p-4 font-semibold text-left text-gray-800 toggle-btn hover:cursor-pointer"
+            >
+              <span class="toogle-txt"> Backend Technologies </span>
+              <span
+                class="arrow transition-transform bg-red-100 p-2 rounded-full"
+                >▼</span
+              >
+            </button>
+
+            <!-- Wrapper for skills -->
+            <div class="p-4 md:p-16">
+              <!-- Main skill list -->
+              <ul
+                class="skill-list grid grid-cols-1 md:grid-cols-4 gap-5 items-center"
+              >
+                <li
+                  class="shadow-lg p-3 rounded-lg hover:scale-105 transition-transform w-full md:w-[250px] h-full"
+                >
+                  <img
+                    src="./images/spring-mvc.svg"
+                    alt="spboot"
+                    class="mx-auto w-[50px] h-[50px]"
+                  />
+                  <h1 class="text-center font-medium mt-2">Spring MVC</h1>
+                </li>
+
+                <li
+                  class="shadow-lg p-3 rounded-lg hover:scale-105 transition-transform w-full md:w-[250px] h-full"
+                >
+                  <img
+                    src="./images/spring-boot.svg"
+                    alt="spboot"
+                    class="mx-auto w-[50px] h-[50px]"
+                  />
+                  <h1 class="text-center font-medium mt-2">Spring Boot</h1>
+                </li>
+
+                <li
+                  class="shadow-lg p-3 rounded-lg hover:scale-105 transition-transform w-full md:w-[250px] h-full"
+                >
+                  <img
+                    src="./images/nestjs.svg"
+                    alt="nest"
+                    class="mx-auto w-[50px] h-[50px]"
+                  />
+                  <h1 class="text-center font-medium mt-2">Nest</h1>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Database -->
+          <div class="skill-group rounded-lg shadow-md bg-white">
+            <!-- Button -->
+            <button
+              class="w-full flex justify-between items-center p-4 font-semibold text-left text-gray-800 toggle-btn hover:cursor-pointer"
+            >
+              <span class="toogle-txt"> Database </span>
+              <span
+                class="arrow transition-transform bg-red-100 p-2 rounded-full"
+                >▼</span
+              >
+            </button>
+
+            <!-- Wrapper for skills -->
+            <div class="p-4 md:p-16">
+              <!-- Main skill list -->
+              <ul
+                class="skill-list grid grid-cols-1 md:grid-cols-4 gap-5 items-center"
+              >
+                <li
+                  class="shadow-lg p-3 rounded-lg hover:scale-105 transition-transform w-full md:w-[250px] h-full"
+                >
+                  <img
+                    src="./images/mysql.svg"
+                    alt="mysql"
+                    class="mx-auto w-[50px] h-[50px]"
+                  />
+                  <h1 class="text-center font-medium mt-2">MySQL</h1>
+                </li>
+
+                <li
+                  class="shadow-lg p-3 rounded-lg hover:scale-105 transition-transform w-full md:w-[250px] h-full"
+                >
+                  <img
+                    src="./images/postgresql.svg"
+                    alt="postgresql"
+                    class="mx-auto w-[50px] h-[50px]"
+                  />
+                  <h1 class="text-center font-medium mt-2">PostgreSQL</h1>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Data Science -->
+          <div class="skill-group rounded-lg shadow-md bg-white">
+            <!-- Button -->
+            <button
+              class="w-full flex justify-between items-center p-4 font-semibold text-left text-gray-800 toggle-btn hover:cursor-pointer"
+            >
+              <span class="toogle-txt"> Data Science </span>
+              <span
+                class="arrow transition-transform bg-red-100 p-2 rounded-full"
+                >▼</span
+              >
+            </button>
+
+            <!-- Wrapper for skills -->
+            <div class="p-4 md:p-16">
+              <!-- Main skill list -->
+              <ul
+                class="skill-list grid grid-cols-1 md:grid-cols-4 gap-5 items-center"
+              >
+                <li
+                  class="shadow-lg p-3 rounded-lg hover:scale-105 transition-transform w-full md:w-[250px] h-full"
+                >
+                  <img
+                    src="./images/numpy.svg"
+                    alt="numpy"
+                    class="mx-auto w-[50px] h-[50px]"
+                  />
+                  <h1 class="text-center font-medium mt-2">NumPy</h1>
+                </li>
+
+                <li
+                  class="shadow-lg p-3 rounded-lg hover:scale-105 transition-transform w-full md:w-[250px] h-full"
+                >
+                  <img
+                    src="./images/matplotlib.svg"
+                    alt="matplotlib"
+                    class="mx-auto w-[50px] h-[50px]"
+                  />
+                  <h1 class="text-center font-medium mt-2">Matplotlib</h1>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Development Tools & Platforms -->
+          <div class="skill-group rounded-lg shadow-md bg-white">
+            <!-- Button -->
+            <button
+              class="w-full flex justify-between items-center p-4 font-semibold text-left text-gray-800 toggle-btn hover:cursor-pointer"
+            >
+              <span class="toogle-txt"> Development Tools & Platforms </span>
+              <span
+                class="arrow transition-transform bg-red-100 p-2 rounded-full"
+                >▼</span
+              >
+            </button>
+
+            <!-- Wrapper for skills -->
+            <div class="p-4 md:p-16">
+              <!-- Main skill list -->
+              <ul
+                class="skill-list grid grid-cols-1 md:grid-cols-4 gap-5 items-center"
+              >
+                <li
+                  class="shadow-lg p-3 rounded-lg hover:scale-105 transition-transform w-full md:w-[250px] h-full"
+                >
+                  <img
+                    src="./images/Codeblocks.png"
+                    alt="cblock"
+                    class="mx-auto w-[50px] h-[50px]"
+                  />
+                  <h1 class="text-center font-medium mt-2">Code Block</h1>
+                </li>
+
+                <li
+                  class="shadow-lg p-3 rounded-lg hover:scale-105 transition-transform w-full md:w-[250px] h-full"
+                >
+                  <img
+                    src="./images/visual-studio-code.svg"
+                    alt="vscode"
+                    class="mx-auto w-[50px] h-[50px]"
+                  />
+                  <h1 class="text-center font-medium mt-2">
+                    Visual Studio Code
+                  </h1>
+                </li>
+
+                <li
+                  class="shadow-lg p-3 rounded-lg hover:scale-105 transition-transform w-full md:w-[250px] h-full"
+                >
+                  <img
+                    src="./images/visual-studio.svg"
+                    alt="vs"
+                    class="mx-auto w-[50px] h-[50px]"
+                  />
+                  <h1 class="text-center font-medium mt-2">Visual Studio</h1>
+                </li>
+
+                <li
+                  class="shadow-lg p-3 rounded-lg hover:scale-105 transition-transform w-full md:w-[250px] h-full"
+                >
+                  <img
+                    src="./images/intellij-idea.svg"
+                    alt="intelij"
+                    class="mx-auto w-[50px] h-[50px]"
+                  />
+                  <h1 class="text-center font-medium mt-2">IntelliJ IDEA</h1>
+                </li>
+
+                <li
+                  class="shadow-lg p-3 rounded-lg hover:scale-105 transition-transform w-full md:w-[250px] h-full"
+                >
+                  <img
+                    src="./images/colab.jpg"
+                    alt="colab"
+                    class="mx-auto w-[50px] h-[50px]"
+                  />
+                  <h1 class="text-center font-medium mt-2">Colab</h1>
+                </li>
+
+                <li
+                  class="shadow-lg p-3 rounded-lg hover:scale-105 transition-transform w-full md:w-[250px] h-full"
+                >
+                  <img
+                    src="./images/git.svg"
+                    alt="git"
+                    class="mx-auto w-[50px] h-[50px]"
+                  />
+                  <h1 class="text-center font-medium mt-2">Git</h1>
+                </li>
+
+                <li
+                  class="shadow-lg p-3 rounded-lg hover:scale-105 transition-transform w-full md:w-[250px] h-full"
+                >
+                  <img
+                    src="./images/github.svg"
+                    alt="github"
+                    class="mx-auto w-[50px] h-[50px]"
+                  />
+                  <h1 class="text-center font-medium mt-2">GitHub</h1>
+                </li>
+
+                <li
+                  class="shadow-lg p-3 rounded-lg hover:scale-105 transition-transform w-full md:w-[250px] h-full"
+                >
+                  <img
+                    src="./images/linux.svg"
+                    alt="linux"
+                    class="mx-auto w-[50px] h-[50px]"
+                  />
+                  <h1 class="text-center font-medium mt-2">Linux</h1>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Projects -->
+      <section
+        id="projects"
+        class="transform opacity-0 translate-y-10 transition-all duration-700"
+      >
+        <h2 class="text-3xl font-bold text-blue-800 mb-4 text-center">
+          Academic Projects
+        </h2>
+
+        <!-- === Carousel Container === -->
+        <div class="relative overflow-hidden" id="project-carousel">
+          <!-- === Slides Wrapper === -->
+          <div
+            class="flex transition-transform duration-700 ease-in-out"
+            id="project-slides"
+          >
+            <!-- === Project-1-basic-java-hidden === -->
+            <div
+              class="bg-white p-6 rounded-lg shadow-md hover:translate-y-[-5px] hover:shadow-xl transition-all flex-shrink-0 basis-full sm:basis-1/3 lg:basis-1/4 md:mr-2"
+            >
+              <!-- project title -->
+              <h3 class="font-semibold text-xl text-blue-800 mb-2">
+                JAVA - Student Management System
+              </h3>
+
+              <!-- project image slider -->
+              <div
+                class="relative overflow-hidden rounded-lg slider"
+                data-slider
+              >
+                <div class="flex transition-transform duration-500" data-slides>
+                  <img
+                    src="./images/java-project.jpg"
+                    alt=""
+                    class="w-full flex-shrink-0"
+                  />
+                  <img
+                    src="./images/java-project.jpg"
+                    alt=""
+                    class="w-full flex-shrink-0"
+                  />
+                  <img
+                    src="./images/java-project.jpg"
+                    alt=""
+                    class="w-full flex-shrink-0"
+                  />
                 </div>
 
-                <!-- BSC -->
-                <div class="mb-12 flex flex-col md:flex-row justify-start items-center w-full group relative">
-                    <!-- Timeline Circle with Year -->
-                    <div class="absolute top-0 left-6 md:left-1/2 transform -translate-x-1/2 md:-translate-x-0 z-10">
-                        <span
-                            class="p-12 text-center flex items-center justify-center w-14 h-14 bg-gradient-to-r from-blue-400 to-blue-600 text-white font-bold rounded-full border-4 border-white shadow-md">
-                            2026 February
-                        </span>
-                    </div>
+                <!-- slider controls -->
+                <button
+                  class="absolute top-1/2 left-2 transform -translate-y-1/2 bg-gray-800 text-white px-2 py-1 rounded hover:cursor-pointer"
+                  data-prev
+                >
+                  ‹
+                </button>
+                <button
+                  class="absolute top-1/2 right-2 transform -translate-y-1/2 bg-gray-800 text-white px-2 py-1 rounded hover:cursor-pointer"
+                  data-next
+                >
+                  ›
+                </button>
+              </div>
 
-                    <!-- Card -->
-                    <div
-                        class="w-full md:w-1/2 md:pr-20 relative order-2 md:order-1 transition-all duration-500 transform group-hover:scale-105 group-hover:shadow-2xl group-hover:bg-blue-50 rounded-xl mt-20 md:mt-0">
-                        <div class="bg-white rounded-xl shadow-md p-6 transition-all duration-500">
-                            <h3 class="text-xl font-semibold text-blue-700">
-                                Bachelor of Science in Computer Science & Engineering
-                            </h3>
-                            <p class="text-gray-600 mt-2">American International University - Bangladesh</p>
-                            <p class="text-gray-700 mt-3 text-justify">2022-Present</p>
-                            <p class="text-gray-700 mt-3 text-justify">GPA: 3.67 out of 4.00</p>
-                        </div>
-                    </div>
-                </div>
+              <!-- project description -->
+              <p
+                class="text-sm text-gray-700 mb-2 text-justify mt-3 line-clamp-3"
+                data-desc
+              >
+                This was my very first Java project—a desktop-based Student
+                Management System built using Java Swing. The application
+                includes features such as adding new students, an admin panel
+                for managing records, and a basic graphical user interface.
+                While there are some areas for improvement, this project helped
+                me gain hands-on experience with Java GUI components,
+                object-oriented programming, and event-driven design.<br /><br />
+                <span class="font-bold">Terms:</span>
+                <span class="text-gray-500"
+                  >Java, Object-oriented programming, Java GUI components, Java
+                  Swing</span
+                >
+              </p>
 
-                <!-- HSC -->
-                <div class="mb-12 flex flex-col md:flex-row justify-end items-center w-full group relative">
-                    <!-- Timeline Circle with Year -->
-                    <div class="absolute top-0 -left-6 md:left-8 md:right-1/5 transform md:translate-x-1/2 z-10">
-                        <span
-                            class="p-12 text-center flex items-center justify-center w-14 h-14 bg-gradient-to-r from-blue-400 to-blue-600 text-white font-bold rounded-full border-4 border-white shadow-md">
-                            2020 November
-                        </span>
-                    </div>
+              <!-- see more/less button -->
+              <button
+                class="text-teal-500 hover:underline hover:cursor-pointer text-sm"
+                data-toggle
+              >
+                See more
+              </button>
 
-                    <!-- Card -->
-                    <div
-                        class="w-full md:w-1/2 md:pl-20 relative order-2 md:order-1 transition-all duration-500 transform group-hover:scale-105 group-hover:shadow-2xl group-hover:bg-blue-50 rounded-xl mt-20 md:mt-0">
-                        <div class="bg-white rounded-xl shadow-md p-6 transition-all duration-500">
-                            <h3 class="text-xl font-semibold text-blue-700">
-                                Higher Secondary Certificate (HSC)
-                            </h3>
-                            <p class="text-gray-600 mt-2">Naogaon Govt. College</p>
-                            <p class="text-gray-700 mt-3 text-justify">2018-2020</p>
-                            <p class="text-gray-700 mt-3 text-justify">GPA: 5.00 out of 5:00</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- SSC -->
-                <div class="flex flex-col md:flex-row justify-start items-center w-full group relative">
-                    <!-- Timeline Circle with Year -->
-                    <div class="absolute top-0 left-6 md:left-1/2 transform -translate-x-1/2 md:-translate-x-0  z-10">
-                        <span
-                            class="p-12 text-center flex items-center justify-center w-14 h-14 bg-gradient-to-r from-blue-400 to-blue-600 text-white font-bold rounded-full border-4 border-white shadow-md">
-                            2018 March
-                        </span>
-                    </div>
-
-                    <!-- Card -->
-                    <div
-                        class="w-full md:w-1/2 md:pr-20 relative order-2 md:order-1 transition-all duration-500 transform group-hover:scale-105 group-hover:shadow-2xl group-hover:bg-blue-50 rounded-xl mt-20 md:mt-0">
-                        <div class="bg-white rounded-xl shadow-md p-6 transition-all duration-500">
-                            <h3 class="text-xl font-semibold text-blue-700">
-                                Secondary School Certificate (SSC)
-                            </h3>
-                            <p class="text-gray-600 mt-2">Naogaon KD Govt. High School, Naogaon</p>
-                            <p class="text-gray-700 mt-3 text-justify">2010-2018</p>
-                            <p class="text-gray-700 mt-3 text-justify">GPA: 5.00 out of 5.00</p>
-                        </div>
-                    </div>
-                </div>
+              <!-- project github link -->
+              <a href="#" class="block mt-3 text-teal-300 hover:underline"
+                >View Project</a
+              >
             </div>
 
-        </section>
+            <!-- === Project-2-basic-dbms-project === -->
+            <div
+              class="bg-white p-6 rounded-lg shadow-md hover:translate-y-1 hover:shadow-xl transition-all flex-shrink-0 basis-full sm:basis-1/3 lg:basis-1/4 md:mr-2"
+            >
+              <!-- project title -->
+              <h3 class="font-semibold text-xl text-blue-800 mb-2">
+                Uran Travel & Tour
+              </h3>
 
-        <!-- Contact -->
-        <section id="contact" class="transform opacity-0 translate-y-10 transition-all duration-700">
-            <h2 class="text-3xl font-bold text-blue-800 mb-4 text-center">Contact me</h2>
-
-            <div class="flex flex-col md:flex-row items-center justify-center gap-10">
-
-                <!-- Contact Details -->
-                <div class="description p-10">
-
-                    <!-- names -->
-                    <div class="name flex flex-col md:flex-row items-center gap-5 mb-5">
-                        <i class="fa-solid fa-user-tie"></i>
-                        <div>
-                            <h1 class="font-bold text-center md:text-left">Name</h1>
-                            <h1 class="font-normal text-gray-600 text-center">Saikot Kundu</h1>
-                        </div>
-                    </div>
-
-                    <!-- address -->
-                    <div class="address flex flex-col md:flex-row items-center gap-5 mb-5">
-                        <i class="fa-solid fa-location-dot"></i>
-                        <div>
-                            <h1 class="font-bold text-center md:text-left">Address</h1>
-                            <h1 class="font-normal text-gray-600 text-center">Dhaka, Bangladesh</h1>
-                        </div>
-                    </div>
-
-                    <!-- email -->
-                    <div class="email flex flex-col md:flex-row items-center gap-5 mb-5">
-                        <i class="fa-solid fa-envelope"></i>
-                        <div>
-                            <h1 class="font-bold text-center md:text-left">Email</h1>
-                            <h1 class="font-normal text-gray-600 text-center">codepoint46615@gmail.com</h1>
-                        </div>
-                    </div>
-
-                    <!-- number -->
-                    <div class="name flex flex-col md:flex-row items-center gap-5 mb-5">
-                        <i class="fa-solid fa-phone"></i>
-                        <div>
-                            <h1 class="font-bold text-center md:text-left">Contact Number</h1>
-                            <h1 class="font-normal text-gray-600 text-center">(+880) 1768200420</h1>
-                        </div>
-                    </div>
-
+              <!-- project image slider -->
+              <div
+                class="relative overflow-hidden rounded-lg slider"
+                data-slider
+              >
+                <div class="flex transition-transform duration-500" data-slides>
+                  <img
+                    src="./images/db-project.jpg"
+                    alt=""
+                    class="w-full flex-shrink-0"
+                  />
+                  <img
+                    src="./images/db-project.jpg"
+                    alt=""
+                    class="w-full flex-shrink-0"
+                  />
+                  <img
+                    src="./images/db-project.jpg"
+                    alt=""
+                    class="w-full flex-shrink-0"
+                  />
                 </div>
 
+                <!--slider controls -->
+                <button
+                  class="absolute top-1/2 left-2 transform -translate-y-1/2 bg-gray-800 text-white px-2 py-1 rounded hover:cursor-pointer"
+                  data-prev
+                >
+                  ‹
+                </button>
+                <button
+                  class="absolute top-1/2 right-2 transform -translate-y-1/2 bg-gray-800 text-white px-2 py-1 rounded hover:cursor-pointer"
+                  data-next
+                >
+                  ›
+                </button>
+              </div>
 
-                <form class="space-y-4 p-5">
-                    <input type="text" placeholder="Full Name" class="w-full p-3 rounded-lg border border-gray-300">
-                    <input type="email" placeholder="Email" class="w-full p-3 rounded-lg border border-gray-300">
-                    <textarea placeholder="Message" class="w-full p-3 rounded-lg border border-gray-300"></textarea>
-                    <button type="submit"
-                        class="w-full bg-blue-800 text-white py-3 rounded-lg hover:bg-teal-500 hover: cursor-pointer transition-colors">Send
-                        Message</button>
-                </form>
+              <!-- project description -->
+              <p
+                class="text-sm text-gray-700 mb-2 text-justify mt-3 line-clamp-3"
+                data-desc
+              >
+                ‘Uran’ is a company that operates an air ticket booking and
+                boarding management system. The system is managed by managers
+                who oversee ticket agents. Ticket agents sell tickets to
+                customers. Customers can buy tickets for themselves or other
+                passengers. Passengers must need a ticket for boarding on
+                planes. The company also stores the route of planes.<br /><br />
+                <span class="font-bold">Terms:</span>
+                <span class="text-gray-500">Database, DBMS, Oracle</span>
+              </p>
+
+              <!-- see more/less button -->
+              <button
+                class="text-teal-500 hover:underline hover:cursor-pointer text-sm"
+                data-toggle
+              >
+                See more
+              </button>
+
+              <!-- project github link -->
+              <a
+                href="https://github.com/CodePoint-46615/Uran"
+                class="block mt-3 text-teal-300 hover:underline hover:cursor-pointer"
+                >View Project</a
+              >
             </div>
-        </section>
 
+            <!-- === Project-3-basic-c#-project === -->
+            <div
+              class="bg-white p-6 rounded-lg shadow-md hover:translate-y-1 hover:shadow-xl transition-all flex-shrink-0 basis-full sm:basis-1/3 lg:basis-1/4 md:mr-2"
+            >
+              <!-- project title -->
+              <h3 class="font-semibold text-xl text-blue-800 mb-2">
+                Ananda Niloy Orphanage
+              </h3>
+
+              <!-- project image slider -->
+              <div
+                class="relative overflow-hidden rounded-lg slider"
+                data-slider
+              >
+                <div class="flex transition-transform duration-500" data-slides>
+                  <img
+                    src="./images/csharp-project-1.jpg"
+                    alt=""
+                    class="w-full flex-shrink-0"
+                  />
+                  <img
+                    src="./images/csharp-project-2.jpg"
+                    alt=""
+                    class="w-full flex-shrink-0"
+                  />
+                  <img
+                    src="./images/csharp-project-3.jpg"
+                    alt=""
+                    class="w-full flex-shrink-0"
+                  />
+                </div>
+
+                <!--slider controls -->
+                <button
+                  class="absolute top-1/2 left-2 transform -translate-y-1/2 bg-gray-800 text-white px-2 py-1 rounded hover:cursor-pointer"
+                  data-prev
+                >
+                  ‹
+                </button>
+                <button
+                  class="absolute top-1/2 right-2 transform -translate-y-1/2 bg-gray-800 text-white px-2 py-1 rounded hover:cursor-pointer"
+                  data-next
+                >
+                  ›
+                </button>
+              </div>
+
+              <!-- project description -->
+              <p
+                class="text-sm text-gray-700 mb-2 text-justify mt-3 line-clamp-3"
+                data-desc
+              >
+                Our Helping Hands Project focuses on creating a user-friendly
+                software system to help orphanages manage their day-to-day
+                activities more efficiently. This initiative aims to simplify
+                tasks like keeping track of resident information, managing staff
+                details, and overseeing daily operations. By incorporating
+                features such as admissions, attendance tracking, and resource
+                management, we aim to make the administrative aspects smoother,
+                fostering a transparent and caring environment for the children.
+                With the Helping Hands Project, we're striving to enhance the
+                overall well-being of those under the care of orphanages,
+                allowing caretakers to focus on providing the best support and
+                nurturing atmosphere.<br /><br />
+                <span class="font-bold">Terms:</span>
+                <span class="text-gray-500"
+                  >C#, Object-oriented Programming, Microsoft SQL Server
+                  Management Studio</span
+                >
+              </p>
+
+              <!-- see more/less button -->
+              <button
+                class="text-teal-500 hover:underline hover:cursor-pointer text-sm"
+                data-toggle
+              >
+                See more
+              </button>
+
+              <!-- project github link -->
+              <a
+                href="https://github.com/CodePoint-46615/anada-niloy-orphanage"
+                class="block mt-3 text-teal-300 hover:underline hover:cursor-pointer"
+                >View Project</a
+              >
+            </div>
+
+            <!-- === Project-4-basic-web-technology-project === -->
+            <div
+              class="bg-white p-6 rounded-lg shadow-md hover:translate-y-1 hover:shadow-xl transition-all flex-shrink-0 basis-full sm:basis-1/3 lg:basis-1/4 md:mr-2"
+            >
+              <!-- project title -->
+              <h3 class="font-semibold text-xl text-blue-800 mb-2">Agripro</h3>
+
+              <!-- project image slider -->
+              <div
+                class="relative overflow-hidden rounded-lg slider"
+                data-slider
+              >
+                <div class="flex transition-transform duration-500" data-slides>
+                  <img
+                    src="./images/web-tech-project.jpg"
+                    alt=""
+                    class="w-full flex-shrink-0"
+                  />
+                  <img
+                    src="./images/web-tech-project.jpg"
+                    alt=""
+                    class="w-full flex-shrink-0"
+                  />
+                  <img
+                    src="./images/web-tech-project.jpg"
+                    alt=""
+                    class="w-full flex-shrink-0"
+                  />
+                </div>
+
+                <!--slider controls -->
+                <button
+                  class="absolute top-1/2 left-2 transform -translate-y-1/2 bg-gray-800 text-white px-2 py-1 rounded hover:cursor-pointer"
+                  data-prev
+                >
+                  ‹
+                </button>
+                <button
+                  class="absolute top-1/2 right-2 transform -translate-y-1/2 bg-gray-800 text-white px-2 py-1 rounded hover:cursor-pointer"
+                  data-next
+                >
+                  ›
+                </button>
+              </div>
+
+              <!-- project description -->
+              <p
+                class="text-sm text-gray-700 mb-2 text-justify mt-3 line-clamp-3"
+                data-desc
+              >
+                AgriPro is a web app for farmers and agribusinesses. It
+                simplifies farming with tools for crop management, market
+                trends, weather updates, and farming tips. With user-friendly
+                dashboards and multilingual support, it promotes sustainable
+                farming, boosts yields, and aids better decisions. Version 1.0
+                lays the foundation for future improvements.<br /><br />
+                <span class="font-bold">Terms:</span>
+                <span class="text-gray-500"
+                  >HTML, Vanila CSS, JavaScript, Vanila PHP</span
+                >
+              </p>
+
+              <!-- see more/less button -->
+              <button
+                class="text-teal-500 hover:underline hover:cursor-pointer text-sm"
+                data-toggle
+              >
+                See more
+              </button>
+
+              <!-- project github link -->
+              <a
+                href="https://github.com/CodePoint-46615/AgriPro"
+                class="block mt-3 text-teal-300 hover:underline hover:cursor-pointer"
+                >View Project</a
+              >
+            </div>
+
+            <!-- === Project-5-sqt-project === -->
+            <div
+              class="bg-white p-6 rounded-lg shadow-md hover:translate-y-1 hover:shadow-xl transition-all flex-shrink-0 basis-full sm:basis-1/3 lg:basis-1/4 md:mr-2"
+            >
+              <!-- project title -->
+              <h3 class="font-semibold text-xl text-blue-800 mb-2">
+                Agershipment
+              </h3>
+
+              <!-- project image slider -->
+              <div
+                class="relative overflow-hidden rounded-lg slider"
+                data-slider
+              >
+                <div class="flex transition-transform duration-500" data-slides>
+                  <img
+                    src="./images/sqat-project.jpg"
+                    alt=""
+                    class="w-full flex-shrink-0"
+                  />
+                  <img
+                    src="./images/sqat-project.jpg"
+                    alt=""
+                    class="w-full flex-shrink-0"
+                  />
+                  <img
+                    src="./images/sqat-project.jpg"
+                    alt=""
+                    class="w-full flex-shrink-0"
+                  />
+                </div>
+
+                <!-- slider controls -->
+                <button
+                  class="absolute top-1/2 left-2 transform -translate-y-1/2 bg-gray-800 text-white px-2 py-1 rounded hover:cursor-pointer"
+                  data-prev
+                >
+                  ‹
+                </button>
+                <button
+                  class="absolute top-1/2 right-2 transform -translate-y-1/2 bg-gray-800 text-white px-2 py-1 rounded hover:cursor-pointer"
+                  data-next
+                >
+                  ›
+                </button>
+              </div>
+
+              <!-- project description -->
+              <p
+                class="text-sm text-gray-700 mb-2 text-justify mt-3 line-clamp-3"
+                data-desc
+              >
+                This was one of my early experiences in software quality
+                assurance and testing. The document summarizes multiple SQAT
+                projects where I explored various testing methodologies and
+                tools in real-world scenarios. While some areas can be refined
+                further, this work gave me practical exposure to manual and
+                automated testing, bug tracking, test case design, and
+                reporting. It helped me understand the importance of quality
+                assurance in the software development lifecycle and how to apply
+                testing strategies effectively.<br /><br />
+                <span class="font-bold">Terms:</span>
+                <span class="text-gray-500"
+                  >Test Cases, Software Quality & Assurance Testing</span
+                >
+              </p>
+
+              <!-- see more/less button -->
+              <button
+                class="text-teal-500 hover:underline hover:cursor-pointer text-sm"
+                data-toggle
+              >
+                See more
+              </button>
+
+              <!-- project github link -->
+              <a
+                href="https://github.com/CodePoint-46615/Software-Quality-and-Testing"
+                class="block mt-3 text-teal-300 hover:underline hover:cursor-pointer"
+                >View Project</a
+              >
+            </div>
+
+            <!-- === Project-6-advance-java-project === -->
+            <div
+              class="bg-white p-6 rounded-lg shadow-md hover:translate-y-1 hover:shadow-xl transition-all flex-shrink-0 basis-full sm:basis-1/3 lg:basis-1/4 md:mr-2"
+            >
+              <!-- project title -->
+              <h3 class="font-semibold text-xl text-blue-800 mb-2">
+                Shomoysheba
+              </h3>
+
+              <!-- project image slider -->
+              <div
+                class="relative overflow-hidden rounded-lg slider"
+                data-slider
+              >
+                <div class="flex transition-transform duration-500" data-slides>
+                  <img
+                    src="./images/spring-boot.jpg"
+                    alt=""
+                    class="w-full flex-shrink-0"
+                  />
+                  <img
+                    src="./images/spring-boot.jpg"
+                    alt=""
+                    class="w-full flex-shrink-0"
+                  />
+                  <img
+                    src="./images/spring-boot.jpg"
+                    alt=""
+                    class="w-full flex-shrink-0"
+                  />
+                </div>
+
+                <!-- slider controls -->
+                <button
+                  class="absolute top-1/2 left-2 transform -translate-y-1/2 bg-gray-800 text-white px-2 py-1 rounded hover:cursor-pointer"
+                  data-prev
+                >
+                  ‹
+                </button>
+                <button
+                  class="absolute top-1/2 right-2 transform -translate-y-1/2 bg-gray-800 text-white px-2 py-1 rounded hover:cursor-pointer"
+                  data-next
+                >
+                  ›
+                </button>
+              </div>
+
+              <!-- project description -->
+              <p
+                class="text-sm text-gray-700 mb-2 text-justify mt-3 line-clamp-3"
+                data-desc
+              >
+                A fully Backend-based project.<br /><br />
+                <span class="font-bold">Terms:</span>
+                <span class="text-gray-500"
+                  >Java, collection-framework, stream-api, spring-boot, maven,
+                  BCrypt-Security, JWT Authentication, MySQL Relational
+                  Databse</span
+                >
+              </p>
+
+              <!-- see more/less button -->
+              <button
+                class="text-teal-500 hover:underline hover:cursor-pointer text-sm"
+                data-toggle
+              >
+                See more
+              </button>
+
+              <!-- project github link -->
+              <a
+                href="https://github.com/CodePoint-46615/Shomoysheba"
+                target="_blank"
+                class="block mt-3 text-teal-300 hover:underline"
+                >View Project</a
+              >
+            </div>
+
+            <!-- === Project-7-advance-web-technologies-project === -->
+            <div
+              class="bg-white p-6 rounded-lg shadow-md hover:translate-y-1 hover:shadow-xl transition-all flex-shrink-0 basis-full sm:basis-1/3 lg:basis-1/4 md:mr-2"
+            >
+              <!-- project title -->
+              <h3 class="font-semibold text-xl text-blue-800 mb-2">
+                ExhibitPro
+              </h3>
+
+              <!-- project image slider -->
+              <div
+                class="relative overflow-hidden rounded-lg slider"
+                data-slider
+              >
+                <div class="flex transition-transform duration-500" data-slides>
+                  <img
+                    src="./images/nest.jpg"
+                    alt=""
+                    class="w-full flex-shrink-0"
+                  />
+                  <img
+                    src="./images/nest.jpg"
+                    alt=""
+                    class="w-full flex-shrink-0"
+                  />
+                  <img
+                    src="./images/nest.jpg"
+                    alt=""
+                    class="w-full flex-shrink-0"
+                  />
+                </div>
+
+                <!-- slider controls -->
+                <button
+                  class="absolute top-1/2 left-2 transform -translate-y-1/2 bg-gray-800 text-white px-2 py-1 rounded hover:cursor-pointer"
+                  data-prev
+                >
+                  ‹
+                </button>
+                <button
+                  class="absolute top-1/2 right-2 transform -translate-y-1/2 bg-gray-800 text-white px-2 py-1 rounded hover:cursor-pointer"
+                  data-next
+                >
+                  ›
+                </button>
+              </div>
+
+              <!-- project description -->
+              <p
+                class="text-sm text-gray-700 mb-2 text-justify mt-3 line-clamp-3"
+                data-desc
+              >
+                A fully Backend-based project.<br /><br />
+                <span class="font-bold">Terms:</span>
+                <span class="text-gray-500"
+                  >JavaScript, TypeScript, Nest Framework, JWT Authentication,
+                  BCrypt Security, PostgreSQL Relational Database</span
+                >
+              </p>
+
+              <!-- see more/less button -->
+              <button
+                class="text-teal-500 hover:underline hover:cursor-pointer text-sm"
+                data-toggle
+              >
+                See more
+              </button>
+
+              <!-- project github link -->
+              <a
+                href="https://github.com/CodePoint-46615/exhibitPro"
+                target="_blank"
+                class="block mt-3 text-teal-300 hover:underline"
+                >View Project</a
+              >
+            </div>
+          </div>
+
+          <!-- === Pagination Dots === -->
+          <div
+            class="flex justify-center items-center gap-2 mt-6 to-blue-500"
+            id="project-dots"
+          ></div>
+        </div>
+      </section>
+
+      <!-- Education -->
+      <section id="education" class="py-16 bg-gray-50">
+        <h2 class="text-3xl font-bold text-blue-800 mb-12 text-center">
+          Education
+        </h2>
+
+        <div class="relative container mx-auto px-4">
+          <!-- vertical timeline line -->
+          <div
+            class="absolute md:left-1/2 left-6 transform md:-translate-x-1/2 h-full border-l-4 bg-gradient-to-b from-blue-400 to-blue-600"
+          ></div>
+
+          <!-- BSC -->
+          <div
+            class="mb-12 flex flex-col md:flex-row justify-start items-center w-full group relative"
+          >
+            <!-- Timeline Circle with Year -->
+            <div
+              class="absolute top-0 left-6 md:left-1/2 transform -translate-x-1/2 md:-translate-x-0 z-10"
+            >
+              <span
+                class="p-12 text-center flex items-center justify-center w-14 h-14 bg-gradient-to-r from-blue-400 to-blue-600 text-white font-bold rounded-full border-4 border-white shadow-md"
+              >
+                2026 February
+              </span>
+            </div>
+
+            <!-- Card -->
+            <div
+              class="w-full md:w-1/2 md:pr-20 relative order-2 md:order-1 transition-all duration-500 transform group-hover:scale-105 group-hover:shadow-2xl group-hover:bg-blue-50 rounded-xl mt-20 md:mt-0"
+            >
+              <div
+                class="bg-white rounded-xl shadow-md p-6 transition-all duration-500"
+              >
+                <h3 class="text-xl font-semibold text-blue-700">
+                  Bachelor of Science in Computer Science & Engineering
+                </h3>
+                <p class="text-gray-600 mt-2">
+                  American International University - Bangladesh
+                </p>
+                <p class="text-gray-700 mt-3 text-justify">2022-Present</p>
+                <p class="text-gray-700 mt-3 text-justify">
+                  GPA: 3.67 out of 4.00
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- HSC -->
+          <div
+            class="mb-12 flex flex-col md:flex-row justify-end items-center w-full group relative"
+          >
+            <!-- Timeline Circle with Year -->
+            <div
+              class="absolute top-0 -left-6 md:left-8 md:right-1/5 transform md:translate-x-1/2 z-10"
+            >
+              <span
+                class="p-12 text-center flex items-center justify-center w-14 h-14 bg-gradient-to-r from-blue-400 to-blue-600 text-white font-bold rounded-full border-4 border-white shadow-md"
+              >
+                2020 November
+              </span>
+            </div>
+
+            <!-- Card -->
+            <div
+              class="w-full md:w-1/2 md:pl-20 relative order-2 md:order-1 transition-all duration-500 transform group-hover:scale-105 group-hover:shadow-2xl group-hover:bg-blue-50 rounded-xl mt-20 md:mt-0"
+            >
+              <div
+                class="bg-white rounded-xl shadow-md p-6 transition-all duration-500"
+              >
+                <h3 class="text-xl font-semibold text-blue-700">
+                  Higher Secondary Certificate (HSC)
+                </h3>
+                <p class="text-gray-600 mt-2">Naogaon Govt. College</p>
+                <p class="text-gray-700 mt-3 text-justify">2018-2020</p>
+                <p class="text-gray-700 mt-3 text-justify">
+                  GPA: 5.00 out of 5:00
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- SSC -->
+          <div
+            class="flex flex-col md:flex-row justify-start items-center w-full group relative"
+          >
+            <!-- Timeline Circle with Year -->
+            <div
+              class="absolute top-0 left-6 md:left-1/2 transform -translate-x-1/2 md:-translate-x-0 z-10"
+            >
+              <span
+                class="p-12 text-center flex items-center justify-center w-14 h-14 bg-gradient-to-r from-blue-400 to-blue-600 text-white font-bold rounded-full border-4 border-white shadow-md"
+              >
+                2018 March
+              </span>
+            </div>
+
+            <!-- Card -->
+            <div
+              class="w-full md:w-1/2 md:pr-20 relative order-2 md:order-1 transition-all duration-500 transform group-hover:scale-105 group-hover:shadow-2xl group-hover:bg-blue-50 rounded-xl mt-20 md:mt-0"
+            >
+              <div
+                class="bg-white rounded-xl shadow-md p-6 transition-all duration-500"
+              >
+                <h3 class="text-xl font-semibold text-blue-700">
+                  Secondary School Certificate (SSC)
+                </h3>
+                <p class="text-gray-600 mt-2">
+                  Naogaon KD Govt. High School, Naogaon
+                </p>
+                <p class="text-gray-700 mt-3 text-justify">2010-2018</p>
+                <p class="text-gray-700 mt-3 text-justify">
+                  GPA: 5.00 out of 5.00
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact -->
+      <section
+        id="contact"
+        class="transform opacity-0 translate-y-10 transition-all duration-700"
+      >
+        <h2 class="text-3xl font-bold text-blue-800 mb-4 text-center">
+          Contact me
+        </h2>
+
+        <div
+          class="flex flex-col md:flex-row items-center justify-center gap-10"
+        >
+          <!-- Contact Details -->
+          <div class="description p-10">
+            <!-- names -->
+            <div class="name flex flex-col md:flex-row items-center gap-5 mb-5">
+              <i class="fa-solid fa-user-tie"></i>
+              <div>
+                <h1 class="font-bold text-center md:text-left">Name</h1>
+                <h1 class="font-normal text-gray-600 text-center">
+                  Saikot Kundu
+                </h1>
+              </div>
+            </div>
+
+            <!-- address -->
+            <div
+              class="address flex flex-col md:flex-row items-center gap-5 mb-5"
+            >
+              <i class="fa-solid fa-location-dot"></i>
+              <div>
+                <h1 class="font-bold text-center md:text-left">Address</h1>
+                <h1 class="font-normal text-gray-600 text-center">
+                  Dhaka, Bangladesh
+                </h1>
+              </div>
+            </div>
+
+            <!-- email -->
+            <div
+              class="email flex flex-col md:flex-row items-center gap-5 mb-5"
+            >
+              <i class="fa-solid fa-envelope"></i>
+              <div>
+                <h1 class="font-bold text-center md:text-left">Email</h1>
+                <h1 class="font-normal text-gray-600 text-center">
+                  codepoint46615@gmail.com
+                </h1>
+              </div>
+            </div>
+
+            <!-- number -->
+            <div class="name flex flex-col md:flex-row items-center gap-5 mb-5">
+              <i class="fa-solid fa-phone"></i>
+              <div>
+                <h1 class="font-bold text-center md:text-left">
+                  Contact Number
+                </h1>
+                <h1 class="font-normal text-gray-600 text-center">
+                  (+880) 1768200420
+                </h1>
+              </div>
+            </div>
+          </div>
+
+          <form class="space-y-4 p-5">
+            <input
+              type="text"
+              placeholder="Full Name"
+              class="w-full p-3 rounded-lg border border-gray-300"
+            />
+            <input
+              type="email"
+              placeholder="Email"
+              class="w-full p-3 rounded-lg border border-gray-300"
+            />
+            <textarea
+              placeholder="Message"
+              class="w-full p-3 rounded-lg border border-gray-300"
+            ></textarea>
+            <button
+              type="submit"
+              class="w-full bg-blue-800 text-white py-3 rounded-lg hover:bg-teal-500 hover: cursor-pointer transition-colors"
+            >
+              Send Message
+            </button>
+          </form>
+        </div>
+      </section>
     </main>
 
-    <footer class="bg-gradient-to-r from-blue-900 via-blue-700 to-cyan-400 text-gray-100 py-4 mt-20 font-semibold">
-        <p class="text-center">&copy; Created By <a href="https://github.com/CodePoint-46615"
-                class="text-gray-400 hover:text-black">CodePoint-46615</a> | 2025 All rights reserved.</p>
+    <!-- Footer section starts here -->
+    <footer
+      class="bg-gradient-to-r from-blue-900 via-blue-700 to-cyan-400 text-gray-100 py-4 mt-20 font-semibold"
+    >
+      <p class="text-center">
+        &copy; Created By
+        <a
+          href="https://github.com/CodePoint-46615"
+          class="text-gray-400 hover:text-black"
+          >CodePoint-46615</a
+        >
+        | 2025 All rights reserved.
+      </p>
     </footer>
 
     <!-- JS Files-->
@@ -892,6 +1490,6 @@
     <script src="./js/hero.js"></script>
     <script src="./js/skill.js"></script>
     <script src="./js/project.js"></script>
-</body>
-
+    <script src="./js/carousel.js"></script>
+  </body>
 </html>
