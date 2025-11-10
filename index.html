@@ -1421,7 +1421,7 @@
         >
           <!-- Contact Details -->
           <div class="description p-10">
-            <!-- names -->
+            <!-- name label -->
             <div class="name flex flex-col md:flex-row items-center gap-5 mb-5">
               <i class="fa-solid fa-user-tie"></i>
               <div>
@@ -1432,7 +1432,7 @@
               </div>
             </div>
 
-            <!-- address -->
+            <!-- address label -->
             <div
               class="address flex flex-col md:flex-row items-center gap-5 mb-5"
             >
@@ -1445,7 +1445,7 @@
               </div>
             </div>
 
-            <!-- email -->
+            <!-- email label -->
             <div
               class="email flex flex-col md:flex-row items-center gap-5 mb-5"
             >
@@ -1458,7 +1458,7 @@
               </div>
             </div>
 
-            <!-- number -->
+            <!-- number label -->
             <div class="name flex flex-col md:flex-row items-center gap-5 mb-5">
               <i class="fa-solid fa-phone"></i>
               <div>
@@ -1472,27 +1472,49 @@
             </div>
           </div>
 
-          <form class="space-y-4 p-5">
+          <!-- submission form -->
+          <form
+            id="my-form"
+            action="https://formspree.io/f/mblqreow"
+            method="POST"
+            class="space-y-4 p-5"
+          >
+            <!-- name input -->
             <input
               type="text"
-              placeholder="Full Name"
+              name="name"
+              placeholder="Your Name"
               class="w-full p-3 rounded-lg border border-gray-300"
             />
+
+            <!-- email input -->
             <input
               type="email"
-              placeholder="Email"
+              name="email"
+              placeholder="Your Email"
               class="w-full p-3 rounded-lg border border-gray-300"
             />
+
+            <!-- message input -->
             <textarea
+              name="message"
               placeholder="Message"
               class="w-full p-3 rounded-lg border border-gray-300"
             ></textarea>
+
+            <!-- send message button -->
             <button
               type="submit"
               class="w-full bg-blue-800 text-white py-3 rounded-lg hover:bg-teal-500 hover: cursor-pointer transition-colors"
             >
               Send Message
             </button>
+
+            <!-- form status placeholder -->
+            <p
+              id="my-form-status"
+              class="text-center text-sm text-green-700 mt-3"
+            ></p>
           </form>
         </div>
       </section>
@@ -1521,5 +1543,6 @@
     <script src="./js/project.js"></script>
     <script src="./js/carousel.js"></script>
     <script src="./js/resume-date.js"></script>
+    <script src="./js/contact.js"></script>
   </body>
 </html>
